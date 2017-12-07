@@ -86,6 +86,7 @@
               <i class="fa fa-volume-up fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Sound</h4>
+             <p class="text-muted">Sound system beserta 2 microphone</p>            
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -93,6 +94,7 @@
               <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Kursi</h4>
+            <p class="text-muted">Kursi lipat sebanyak 150 dan meja 4 set</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -100,6 +102,7 @@
               <i class="fa fa-user-secret fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Keamanan</h4>
+            <p class="text-muted">Keamanan dari Binmas, Babinsa dan Security</p>
           </div>
         </div>
       </div>
@@ -116,84 +119,84 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal1">
-              <div class="galeri-hover">
+            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal1"> -->
+             <!--  <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/01-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/01-thumbnail.jpg" alt="">
+            <!-- </a> -->
             <div class="galeri-caption">
               <h4>Threads</h4>
               <p class="text-muted">Illustration</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal2">
+            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal2">
               <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/02-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/02-thumbnail.jpg" alt="">
+            <!-- </a> -->
             <div class="galeri-caption">
               <h4>Explore</h4>
               <p class="text-muted">Graphic Design</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal3">
+           <!--  <a class="galeri-link" data-toggle="modal" href="#galeriModal3">
               <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/03-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/03-thumbnail.jpg" alt="">
+            <!-- </a> -->
             <div class="galeri-caption">
               <h4>Finish</h4>
               <p class="text-muted">Identity</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal4">
+           <!--  <a class="galeri-link" data-toggle="modal" href="#galeriModal4">
               <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/04-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/04-thumbnail.jpg" alt="">
+            <!-- </a> -->
             <div class="galeri-caption">
               <h4>Lines</h4>
               <p class="text-muted">Branding</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal5">
+            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal5">
               <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/05-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/05-thumbnail.jpg" alt="">
+            <!-- </a> -->
             <div class="galeri-caption">
               <h4>Southwest</h4>
               <p class="text-muted">Website Design</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <a class="galeri-link" data-toggle="modal" href="#galeriModal6">
+            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal6">
               <div class="galeri-hover">
                 <div class="galeri-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/galeri/06-thumbnail.jpg" alt="">
-            </a>
+              </div> -->
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/06-thumbnail.jpg" alt="">
+           <!--  </a> -->
             <div class="galeri-caption">
               <h4>Window</h4>
               <p class="text-muted">Photography</p>
@@ -209,7 +212,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Informasi</h2>
-            <h3 class="section-subheading text-muted">Bagaimana caranya menyewa gedung ini?</h3>
+            <h3 class="section-subheading text-muted">Tata cara menyewa gedung ini</h3>
           </div>
         </div>
         <div class="row">
@@ -217,8 +220,9 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <i class="fa fa-file-text-o fa-volume-up fa-stack fa-4x fa-inverse"></i>
-              <!-- <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt=""> -->                </div>
+                   <!-- <i class="rounded-circle fa fa-file-text-o fa-stack fa-4x fa-inverse"></i> -->              
+                   <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/icon-forms.png" alt="">                
+                  </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>Pertama,</h4>
@@ -231,8 +235,8 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                 <i class="fa fa-check-square-o fa-volume-up fa-stack fa-4x fa-inverse"></i>
-                  <!-- <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt=""> -->
+                 <!-- <i class="fa fa-check-square-o fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-check.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -246,8 +250,8 @@
               </li>
               <li>
                 <div class="timeline-image">
-                                  <i class="fa fa-credit-card fa-volume-up fa-stack fa-4x fa-inverse"></i>
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                  <!-- <i class="fa fa-credit-card fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/credit-card.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -261,8 +265,8 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <i class="fa fa-thumbs-o-up fa-volume-up fa-stack fa-4x fa-inverse"></i>
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <!-- <i class="fa fa-thumbs-o-up fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/thumb-up.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -424,32 +428,32 @@
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="<?php echo base_url(); ?>assets/img/logos/envato.jpg" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="<?php echo base_url(); ?>assets/img/logos/designmodo.jpg" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="<?php echo base_url(); ?>assets/img/logos/themeforest.jpg" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="<?php echo base_url(); ?>assets/img/logos/creative-market.jpg" alt="">
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     
 
@@ -496,7 +500,7 @@
     <!-- galeri Modals -->
 
     <!-- Modal 1 -->
-    <div class="galeri-modal modal fade" id="galeriModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="galeri-modal modal fade" id="galeriModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -507,9 +511,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body"> -->
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+                  <!-- <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/01-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -527,10 +531,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 2 -->
-    <div class="galeri-modal modal fade" id="galeriModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="galeri-modal modal fade" id="galeriModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -541,9 +545,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body"> -->
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+                  <!-- <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/02-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -561,10 +565,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 3 -->
-    <div class="galeri-modal modal fade" id="galeriModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="galeri-modal modal fade" id="galeriModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -575,9 +579,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body"> -->
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+                  <!-- <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/03-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -595,10 +599,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 4 -->
-    <div class="galeri-modal modal fade" id="galeriModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="galeri-modal modal fade" id="galeriModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -609,9 +613,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body"> -->
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+               <!--    <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/04-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -629,10 +633,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 5 -->
-    <div class="galeri-modal modal fade" id="galeriModal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <!--   <div class="galeri-modal modal fade" id="galeriModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -643,9 +647,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body"> -->
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+                  <!-- <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/05-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -663,10 +667,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 6 -->
-    <div class="galeri-modal modal fade" id="galeriModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="galeri-modal modal fade" id="galeriModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -677,9 +681,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body" -->>
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
+                 <!--  <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/galeri/06-full.jpg" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -697,7 +701,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
