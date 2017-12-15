@@ -36,24 +36,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Fasilitas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#informasi">Informasi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pemesanan">Pemesanan</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger">Konfirmasi</a>
             </li>
-           <!--  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tim">Tim</a>
-            </li> -->
           </ul>
         </div>
       </div>
