@@ -122,7 +122,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula3.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
               <h4>Threads</h4>
@@ -136,7 +136,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula2.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
               <h4>Explore</h4>
@@ -150,7 +150,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula1.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
               <h4>Finish</h4>
@@ -164,7 +164,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/04-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula4.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
               <h4>Lines</h4>
@@ -178,7 +178,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/05-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula6.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
               <h4>Southwest</h4>
@@ -192,7 +192,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/06-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula5.jpg" alt="">
            <!--  </a> -->
             <div class="galeri-caption">
               <h4>Window</h4>
