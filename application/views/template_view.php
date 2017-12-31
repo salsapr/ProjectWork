@@ -125,8 +125,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula3.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+              <h4>Aula SMK Telkom</h4>
+              <p class="text-muted">Tampak depan aula</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
@@ -139,8 +139,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula2.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h4>Acara Internal</h4>
+              <p class="text-muted">Kegitan Sekolah di Aula</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
@@ -153,8 +153,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula1.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+              <h4>Acara Umum</h4>
+              <p class="text-muted">Kegiatan umum di aula</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
@@ -167,8 +167,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula4.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+              <h4>Acara Resepsi</h4>
+              <p class="text-muted">Acara resepsi pernikahan di aula</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
@@ -181,8 +181,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula6.jpg" alt="">
             <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Acara Resepsi</h4>
+              <p class="text-muted">Acara resepsi pernikahan di aula</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
@@ -195,8 +195,8 @@
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula5.jpg" alt="">
            <!--  </a> -->
             <div class="galeri-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4>Acara Resepsi</h4>
+              <p class="text-muted">Acara resepsi pernikahan di aula</p>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@
                     <h4 class="subheading">Isi Form Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut dan dapatkan NOMOR PEMESANAN Anda</p>
                   </div>
                 </div>
               </li>
@@ -238,10 +238,10 @@
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>Kedua,</h4>
-                    <h4 class="subheading">Tunggu Konfirmasi</h4>
+                    <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis</p>
                   </div>
                 </div>
               </li>
