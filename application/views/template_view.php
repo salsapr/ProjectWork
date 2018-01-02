@@ -184,7 +184,7 @@
                     <h4 class="subheading">Isi Form Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut dan dapatkan NOMOR PEMESANAN Anda</p>
+                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut</p>
                   </div>
                 </div>
               </li>
@@ -199,7 +199,7 @@
                     <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis</p>
+                    <p class="text-muted">Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
                   </div>
                 </div>
               </li>
@@ -214,7 +214,7 @@
                     <h4 class="subheading">Lakukan Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
                   </div>
                 </div>
               </li>
@@ -229,7 +229,7 @@
                     <h4 class="subheading">Konfirmasi Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
                   </div>
                 </div>
               </li>
@@ -280,7 +280,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <textarea class="form-control" id="ket" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
+                    <p class="help-block text-danger" style="color: red">*contoh : Acara ini akan membutuhkan fasilitas kursi dan lahan parkir</p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
