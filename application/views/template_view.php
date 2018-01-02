@@ -116,86 +116,44 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 galeri-item">
-            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal1"> -->
-             <!--  <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula3.jpg" alt="">
-            <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Threads</h4>
+              <h4>Gedung Aula</h4>
               <p class="text-muted">Illustration</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal2">
-              <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula2.jpg" alt="">
-            <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Explore</h4>
+              <h4>Seminar</h4>
               <p class="text-muted">Graphic Design</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-           <!--  <a class="galeri-link" data-toggle="modal" href="#galeriModal3">
-              <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula1.jpg" alt="">
-            <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Finish</h4>
+              <h4>Acara Sosial</h4>
               <p class="text-muted">Identity</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-           <!--  <a class="galeri-link" data-toggle="modal" href="#galeriModal4">
-              <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula4.jpg" alt="">
-            <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Lines</h4>
+              <h4>Acara Pernikahan</h4>
               <p class="text-muted">Branding</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal5">
-              <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula6.jpg" alt="">
-            <!-- </a> -->
             <div class="galeri-caption">
-              <h4>Southwest</h4>
+              <h4>Acara Pernikahan</h4>
               <p class="text-muted">Website Design</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
-            <!-- <a class="galeri-link" data-toggle="modal" href="#galeriModal6">
-              <div class="galeri-hover">
-                <div class="galeri-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula5.jpg" alt="">
-           <!--  </a> -->
             <div class="galeri-caption">
-              <h4>Window</h4>
+              <h4>Acara Pernikahan</h4>
               <p class="text-muted">Photography</p>
             </div>
           </div>
@@ -350,15 +308,16 @@
           <div class="col-sm-4">
             <div class="tim-member">
               <img class="mx-auto rounded-circle" src="img/tim/1.jpg" alt="">
-              <h4>Nurkumala Budi Fajrin</h4>
-              <p class="text-muted">Lorem Ipsum</p>
+              <h5>Nurkumala Budi Fajrin</h5>
+              <br>
+         <!--      <p class="text-muted">Lorem Ipsum</p> -->
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.instagram.com/malbuf/">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
+               <!--  <li class="list-inline-item">
                   <a href="#">
                     <i class="fa fa-facebook"></i>
                   </a>
@@ -367,22 +326,23 @@
                   <a href="#">
                     <i class="fa fa-linkedin"></i>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
               <img class="mx-auto rounded-circle" src="img/tim/2.jpg" alt="">
-              <h4>Ridha Nadhira Febyani</h4>
-              <p class="text-muted">Lorem Ipsum</p>
+              <h5>Ridha Nadhira Febyani</h5>
+              <br>
+              <!-- <p class="text-muted">Lorem Ipsum</p> -->
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.instagram.com/riridhh/">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                   <a href="#">
                     <i class="fa fa-facebook"></i>
                   </a>
@@ -391,22 +351,23 @@
                   <a href="#">
                     <i class="fa fa-linkedin"></i>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
               <img class="mx-auto rounded-circle" src="img/tim/3.jpg" alt="">
-              <h4>Salsabila Putri Rayieningtyas</h4>
-              <p class="text-muted">Lorem Ipsum</p>
+              <h5>Salsabila Putri Rayieningtyas</h5>
+              <br>
+              <!-- <p class="text-muted">Lorem Ipsum</p> -->
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.instagram.com/salspr_/">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                   <a href="#">
                     <i class="fa fa-facebook"></i>
                   </a>
@@ -415,7 +376,7 @@
                   <a href="#">
                     <i class="fa fa-linkedin"></i>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
