@@ -49,7 +49,7 @@
               <a class="nav-link js-scroll-trigger" href="#pemesanan">Pemesanan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url(); ?>index.php/konfirmasi/">Konfirmasi</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url(); ?>konfirmasi/">Konfirmasi</a>
             </li>
           </ul>
         </div>
