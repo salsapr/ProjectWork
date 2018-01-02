@@ -58,22 +58,22 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="id" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="id" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Silahkan isi nama Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="email" type="rek" placeholder="Nama Rekening" required data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="email" type="rek" placeholder="Nama Rekening" required data-validation-required-message="Silahkan isi nama rekening Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="uang" placeholder="Jumlah Uang" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="phone" type="uang" placeholder="Jumlah Uang" required data-validation-required-message="Silahkan isi jumlah uang yang telah Anda bayar.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
