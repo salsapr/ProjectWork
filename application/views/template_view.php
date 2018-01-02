@@ -111,80 +111,50 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Galeri</h2>
-<!--             <h3 class="section-subheading text-muted">Foto keseluruhan.</h3>
- -->          </div>
+    <!--<h3 class="section-subheading text-muted">Foto keseluruhan.</h3>-->          
+          </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula3.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Gedung Aula</h4>
-              <p class="text-muted">Illustration</p>
-=======
               <h4>Aula SMK Telkom</h4>
               <p class="text-muted">Tampak depan aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula2.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Seminar</h4>
-              <p class="text-muted">Graphic Design</p>
-=======
               <h4>Acara Internal</h4>
               <p class="text-muted">Kegitan Sekolah di Aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula1.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Acara Sosial</h4>
-              <p class="text-muted">Identity</p>
-=======
               <h4>Acara Umum</h4>
               <p class="text-muted">Kegiatan umum di aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula4.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Acara Pernikahan</h4>
-              <p class="text-muted">Branding</p>
-=======
               <h4>Acara Resepsi</h4>
               <p class="text-muted">Acara resepsi pernikahan di aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula6.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Acara Pernikahan</h4>
-              <p class="text-muted">Website Design</p>
-=======
               <h4>Acara Resepsi</h4>
               <p class="text-muted">Acara resepsi pernikahan di aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
           <div class="col-md-4 col-sm-6 galeri-item">
               <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/galeri/aula5.jpg" alt="">
             <div class="galeri-caption">
-<<<<<<< HEAD
-              <h4>Acara Pernikahan</h4>
-              <p class="text-muted">Photography</p>
-=======
               <h4>Acara Resepsi</h4>
               <p class="text-muted">Acara resepsi pernikahan di aula</p>
->>>>>>> e293276567774a735857dc94c5e30706cebdb128
             </div>
           </div>
         </div>
