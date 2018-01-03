@@ -12,7 +12,10 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('login_view');
 	}
-
+	public function admin()
+	{
+		$this->load->view('admin_view');
+	}
 }
 
 /* End of file admin.php */
