@@ -13,7 +13,6 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('login_view');
 	}
-<<<<<<< HEAD
 
 	public function masuk()
 	{
@@ -30,15 +29,14 @@ class Admin extends CI_Controller {
 				}
 			} else {
 				$data['notif'] = validation_errors();
-				//$data['main_view'] = 'login_view'; --> harusnya tiada
 				$this->load->view('login_view', $data);	
 			}
 		}
-=======
-	public function admin()
+	}
+	public function data_pesanan()
 	{
 		$this->load->view('admin_view');
->>>>>>> 40a5bf9ee3328057bef19e7900e3c7e34d38ca8e
+
 	}
 }
 
