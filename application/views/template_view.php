@@ -269,11 +269,16 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="day" type="date" placeholder="Hari dan Tanggal Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
+                  <label white >Hari dan Tanggal Pelaksanaan</label>
+                    <input class="form-control" id="day" type="date" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="event" type="text" placeholder="Jenis Acara" required data-validation-required-message="Please enter your event.">
+                    <select class="form-control">
+                      <option value="">PILIH JENIS ACARA</option>
+                      <option value="acara umum">ACARA UMUM</option>
+                      <option value="acara sosial">ACARA SOSIAL</option>
+                    </select>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
