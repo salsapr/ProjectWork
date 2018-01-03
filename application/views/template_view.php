@@ -269,18 +269,37 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="day" type="hari" placeholder="Hari dan Tanggal Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="day" type="date" placeholder="Hari dan Tanggal Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="event" type="text" placeholder="Jenis Acara" required data-validation-required-message="Please enter your event.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
                     <input class="form-control" id="time" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                   </div>
+                  <?php
+                    function generateCode(){
+                      $done = 0;
+                      do{
+                        $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+                          $code = '';
+                          for ($i = 0; $i < 7; $i++){
+                              $code .= $characters[mt_rand(0, 61)];
+                          }
+                          $done = 1;
+                      }while($done != 1);
+                      return $code;
+                    }
+                  ?>
+                  <input type="text" name="code" value="<?php echo generateCode(); ?>">
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <textarea class="form-control" id="ket" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger" style="color: red">*contoh : Acara ini akan membutuhkan fasilitas kursi dan lahan parkir</p>
+                    <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
@@ -307,7 +326,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="img/tim/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/mala.jpg" alt="">
               <h5>Nurkumala Budi Fajrin</h5>
               <br>
          <!--      <p class="text-muted">Lorem Ipsum</p> -->
@@ -332,7 +351,7 @@
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="img/tim/2.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/ridha.jpg" alt="">
               <h5>Ridha Nadhira Febyani</h5>
               <br>
               <!-- <p class="text-muted">Lorem Ipsum</p> -->
@@ -357,7 +376,7 @@
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="img/tim/3.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/salsa.jpg" alt="">
               <h5>Salsabila Putri Rayieningtyas</h5>
               <br>
               <!-- <p class="text-muted">Lorem Ipsum</p> -->
