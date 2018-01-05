@@ -257,23 +257,30 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+          <?php
+              if (!empty($notif)) {
+              echo '<div class="alert alert-danger">';
+              echo $notif;
+              echo '</div>';
+            }
+          ?> 
+            <form id="contactForm" name="sentMessage" action="<?php echo base_url();?>home/pesan">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Masukan Nama Lengkap.">
+                    <input class="form-control" id="nama" name="nama_cust" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Masukan Nama Lengkap.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
+                    <input class="form-control" id="tlp" name="telp" type="tel" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="day" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
+                    <input class="form-control" id="day" name="tanggal" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="time" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
+                    <input class="form-control" id="jam" name="jam" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <?php
@@ -294,7 +301,7 @@
                 </div>
                 <div class="col-md-6">
                 <div class="form-group">
-                    <select class="form-control">
+                    <select class="form-control" id="jenis_acara" name="jenis">
                       <option value="">PILIH JENIS ACARA</option>
                       <option value="acara umum">ACARA UMUM</option>
                       <option value="acara sosial">ACARA SOSIAL</option>
@@ -302,14 +309,14 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" id="ket" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Kirim</button>
+                  <button id="pesan" name="submit" class="btn btn-primary btn-xl text-uppercase" type="submit">Kirim</button>
                 </div>
               </div>
             </form>
