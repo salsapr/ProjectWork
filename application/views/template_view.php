@@ -184,14 +184,14 @@
                     <h4 class="subheading">Isi Form Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut</p>
+                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian klik tombol "kirim"</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
                  <!-- <i class="fa fa-check-square-o fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
-                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-check.png" alt="">
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-code.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -199,7 +199,7 @@
                     <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
+                    <p class="text-muted">Selanjutnya Anda akan menerima kode pemesanan setelah mengisi lengkap formulir yang tersedia</p>
                   </div>
                 </div>
               </li>
@@ -214,7 +214,7 @@
                     <h4 class="subheading">Lakukan Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
+                    <p class="text-muted">Segera lakukan pembayaran ke rekening yang tersedia sesuai dengan jumlah yang sudah ditentukan</p>
                   </div>
                 </div>
               </li>
@@ -229,17 +229,11 @@
                     <h4 class="subheading">Konfirmasi Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
+                    <p class="text-muted">Setelah melakukan transfer, kirimkan bukti pembayaran pada tab "Konfirmasi" untuk mengonfirmasi pembayaran Anda</p>
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Nikmati
-                    <br>Acara
-                    <br>Anda!</h4>
-                </div>
-              </li>
+             
             </ul>
           </div>
         </div>
@@ -269,11 +263,16 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="day" type="date" placeholder="Hari dan Tanggal Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
+                  <label white >Hari dan Tanggal Pelaksanaan</label>
+                    <input class="form-control" id="day" type="date" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="event" type="text" placeholder="Jenis Acara" required data-validation-required-message="Please enter your event.">
+                    <select class="form-control">
+                      <option value="">PILIH JENIS ACARA</option>
+                      <option value="acara umum">ACARA UMUM</option>
+                      <option value="acara sosial">ACARA SOSIAL</option>
+                    </select>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
