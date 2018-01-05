@@ -184,14 +184,14 @@
                     <h4 class="subheading">Isi Form Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian klik tombol "kirim"</p>
+                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
                  <!-- <i class="fa fa-check-square-o fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
-                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-code.png" alt="">
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-check.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -199,7 +199,7 @@
                     <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Selanjutnya Anda akan menerima kode pemesanan setelah mengisi lengkap formulir yang tersedia</p>
+                    <p class="text-muted">Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
                   </div>
                 </div>
               </li>
@@ -214,7 +214,7 @@
                     <h4 class="subheading">Lakukan Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Segera lakukan pembayaran ke rekening yang tersedia sesuai dengan jumlah yang sudah ditentukan</p>
+                    <p class="text-muted">Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
                   </div>
                 </div>
               </li>
@@ -229,11 +229,17 @@
                     <h4 class="subheading">Konfirmasi Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Setelah melakukan transfer, kirimkan bukti pembayaran pada tab "Konfirmasi" untuk mengonfirmasi pembayaran Anda</p>
+                    <p class="text-muted">Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
                   </div>
                 </div>
               </li>
-             
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Nikmati
+                    <br>Acara
+                    <br>Anda!</h4>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -255,28 +261,19 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Masukan Nama Lengkap.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                  <label white >Hari dan Tanggal Pelaksanaan</label>
-                    <input class="form-control" id="day" type="date" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="day" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <select class="form-control">
-                      <option value="">PILIH JENIS ACARA</option>
-                      <option value="acara umum">ACARA UMUM</option>
-                      <option value="acara sosial">ACARA SOSIAL</option>
-                    </select>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="time" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="time" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <?php
@@ -296,6 +293,14 @@
                   <input type="text" name="code" value="<?php echo generateCode(); ?>">
                 </div>
                 <div class="col-md-6">
+                <div class="form-group">
+                    <select class="form-control">
+                      <option value="">PILIH JENIS ACARA</option>
+                      <option value="acara umum">ACARA UMUM</option>
+                      <option value="acara sosial">ACARA SOSIAL</option>
+                    </select>
+                    <p class="help-block text-danger"></p>
+                  </div>
                   <div class="form-group">
                     <textarea class="form-control" id="ket" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
