@@ -69,18 +69,18 @@
                                             <th>Keterangan</th>
                                         </tr>
                                     </thead>
-                                    <!-- <tbody>
+                                    <tbody>
                                         <?php
-                                        foreach ($obatnya as $data) {
+                                        foreach ($pesanan as $data) {
                                             echo'
                                                 <tr>
-                                                    <td>'.$data->KD_OBAT.'</td>
-                                                    <td>'.$data->NAMA_OBAT.'</td>
-                                                    <td>'.$data->KD_SUPPLIER.'</td>
-                                                    <td>'.$data->JUMLAH_STOK.'</td>
-                                                    <td>'.$data->PRODUSEN.'</td>
-                                                    <td>'.$data->HARGA.'</td>
-                                                    <td>'.$data->FOTO.'</td>
+                                                    <td>'.$data->KD_BOOKING.'</td>
+                                                    <td>'.$data->TANGGAL.'</td>
+                                                    <td>'.$data->USERNAME.'</td>
+                                                    <td>'.$data->NAMA_KONFIR.'</td>
+                                                    <td>'.$data->NO_REKENING.'</td>
+                                                    <td>'.$data->JML_UANG.'</td>
+                                                    <td>'.$data->STATUS.'</td>
                                                     <td>
                                                         <a href="#" class="fa fa-edit">
                                                         <a href="#" class="fa fa-trash-o">
@@ -92,7 +92,7 @@
 
                                         ?>
                                     </tbody>
- -->                                </table>
+                                 </table>
                             </div>
                         </div>
                     </div>

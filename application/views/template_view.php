@@ -191,7 +191,7 @@
               <li class="timeline-inverted">
                 <div class="timeline-image">
                  <!-- <i class="fa fa-check-square-o fa-volume-up fa-stack fa-4x fa-inverse"></i> -->
-                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-check.png" alt="">
+                  <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/form-code.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -233,13 +233,7 @@
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Nikmati
-                    <br>Acara
-                    <br>Anda!</h4>
-                </div>
-              </li>
+             
             </ul>
           </div>
         </div>

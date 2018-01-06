@@ -35,8 +35,15 @@ class Admin extends CI_Controller {
 	}
 	public function data_pesanan()
 	{
-		$this->load->view('admin_view');
-
+		if($this->session->userdata('logged_in') == TRUE)
+		{
+			$data['main_view'] = 'admin_view';
+			$data['pesanan'] = $this->admin_model->get_data_pesanan();
+			$this->load->view('admin_view', $data);
+		}
+		else{
+			redirect('admin');
+		}
 	}
 }
 
