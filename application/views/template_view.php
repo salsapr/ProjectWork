@@ -257,8 +257,8 @@
               echo $notif;
               echo '</div>';
             }
-          ?> 
-            <form id="contactForm" name="sentMessage" action="<?php echo base_url();?>home/pesan">
+          ?>
+            <form method="post" id="target" action="<?php echo base_url();?>home/pesan">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -292,7 +292,7 @@
                     }
                   ?>
                   <input type="text" name="code" value="<?php echo generateCode(); ?>">
-                </div>
+                </div><!-- samllekom -->
                 <div class="col-md-6">
                 <div class="form-group">
                     <select class="form-control" id="jenis_acara" name="jenis">
@@ -310,7 +310,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="pesan" name="submit" class="btn btn-primary btn-xl text-uppercase" type="submit">Kirim</button>
+                  <input type="submit" name="send" id="other" class="btn btn-primary btn-xl" value="KIRIM" />
                 </div>
               </div>
             </form>
@@ -421,7 +421,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="<?php echo base_url(); ?>assets/js/agency.min.js"></script>
-
+    <script type="text/javascript">
+      // $("#other").click(function() {
+      //   console.log("ayo");
+      //   $("#target").submit();
+      // });
+    </script>
   </body>
 
 </html>

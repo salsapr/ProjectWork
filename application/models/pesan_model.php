@@ -11,12 +11,12 @@ class Pesan_model extends CI_Model {
 	{
 		$data = array
 		(
-			'nama_cust'		=> $this->input->post('nama_cust'),
-			'telp'			=> $this->input->post('telp'),
-			'tanggal'		=> $this->input->post('tanggal'),
-			'jam'			=> $this->input->post('jam'),
-			'jenis_acara'	=> $this->input->post('jenis_acara'),
-			'keterangan'	=> $this->input->post('keterangan')
+			'NAMA_CUST'		=> $this->input->post('nama_cust'),
+			'TELP'			=> $this->input->post('telp'),
+			'TANGGAL'		=> $this->input->post('tanggal'),
+			'JAM'			=> $this->input->post('jam'),
+			'JENIS_ACARA'	=> $this->input->post('jenis'),
+			'KETERANGAN'	=> $this->input->post('keterangan')
 		);
 		$this->db->insert('customer', $data);
 
@@ -26,7 +26,7 @@ class Pesan_model extends CI_Model {
 		}
 		else{
 			return FALSE;
-		}
+		}	
 
 	}
 

@@ -15,35 +15,31 @@ class home extends CI_Controller {
 	}
 	public function pesan()
 	{
-		if($this->input->post('submit')){
+
+		if($this->input->post('send')){
 			$this->form_validation->set_rules('nama_cust','Nama','trim|required');
 			$this->form_validation->set_rules('telp','Telp','trim|required');
-			$this->form_validation->set_rules('tanggal','Tanggal','trim|required|numeric');
+			$this->form_validation->set_rules('tanggal','Tanggal','trim|required');
 			$this->form_validation->set_rules('jam','Jam','trim|required');
-			$this->form_validation->set_rules('jenis_acara','Jenis Acara','trim|required');
-			$this->form_validation->set_rules('keterangan','Keterangan','trim|required');
+			$this->form_validation->set_rules('jenis','Jenis Acara','trim|required');
+			$this->form_validation->set_rules('keterangan','Keterangan','trim');
 			
-		if($this->form_validation->run() == TRUE){
-			if($this->pesan_model->pesan()==TRUE)
-			{
-				$data['notif'] = 'Validasi sukses';
-			$this->load->view('template',$data);
+			if($this->form_validation->run() == TRUE){
+				if($this->pesan_model->pesan()==TRUE)
+				{
+					$data['notif'] = 'Validasi sukses';
+					$this->load->view('template_view',$data);
+				}else{
+					$data['notif'] = 'Validasi gagal';
+					$this->load->view('template_view',$data);
+				}
+			}else{
+				//jika gagal
+				$data['notif'] = validation_errors();
+				$this->load->view('template_view',$data);
 			}
-			else{
-				$data['notif'] = 'Validasi gagal';
-			$this->load->view('template',$data);
-			}
-			
-			
-		}else{
-			//jika gagal
-			$data['notif'] = validation_errors();
-			$this->load->view('template',$data);
 		}
-		}
-		else{
-			$this->load->view('template',$data);
-		}
+		
 	}
 
 }
