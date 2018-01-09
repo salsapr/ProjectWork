@@ -303,7 +303,7 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>

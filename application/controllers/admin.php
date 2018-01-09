@@ -22,7 +22,7 @@ class Admin extends CI_Controller {
 			if ($this->form_validation->run() == TRUE) {
 				if ($this->admin_model->cek_user() == TRUE)
 				{
-					redirect(base_url('admin/data_pesanan'));
+					redirect(base_url('admin/data_transaksi_pesanan'));
 				}else{
 					$data['notif'] = 'Login Gagal';
 					$this->load->view('login_view', $data);
@@ -33,7 +33,7 @@ class Admin extends CI_Controller {
 			}
 		}
 	}
-	public function data_pesanan()
+	public function data_transaksi_pesanan()
 	{
 		if($this->session->userdata('logged_in') == TRUE)
 		{
@@ -45,6 +45,33 @@ class Admin extends CI_Controller {
 			redirect('admin');
 		}
 	}
+
+	public function data_pesanan()
+	{
+		if($this->session->userdata('logged_in') == TRUE)
+		{
+			// $data['main_view'] = 'admin_view';
+			$data['pesanan'] = $this->admin_model->get_data_pesanan();
+			$this->load->view('data_pesanan_view', $data);
+		}
+		else{
+			redirect('admin');
+		}
+	}
+
+	public function data_pembayaran()
+	{
+		if($this->session->userdata('logged_in') == TRUE)
+		{
+			// $data['main_view'] = 'admin_view';
+			$data['pembayaran'] = $this->admin_model->get_data_pesanan();
+			$this->load->view('data_pembayaran_view', $data);
+		}
+		else{
+			redirect('admin');
+		}
+	}
+
 	public function logout()
 	{
 		$data = array(

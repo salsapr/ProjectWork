@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Penyewaan Aula SMK Telkom Malang</title>
+    <title>Data Pembayaran</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,23 +25,7 @@
 
   </head>
   <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan</a>
-        &nbsp &nbsp | &nbsp &nbsp
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran</a>
-        
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/logout">Keluar</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-            <?php
+     <?php
                 $notif = $this->session->flashdata('notif');
                 if(!empty($notif)){
                     echo '
@@ -51,11 +35,11 @@
                     ';
                 }
             ?>
-    <section id="admin_view">
+       <section id="admin_view">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Data Transaksi Pemesanan</h2>
+            <h2 class="section-heading text-uppercase">Data Pembayaran</h2>
           </div>
         </div>
             <div class="row">
@@ -63,7 +47,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <!-- <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Kode Pemesanan</th>
@@ -99,7 +83,7 @@
                                             ';
                                         }
 
-                                        ?>
+                                        ?> -->
                                     </tbody>
                                  </table>
                             </div>
