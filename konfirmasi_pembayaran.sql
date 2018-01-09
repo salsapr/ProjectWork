@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 05 Jan 2018 pada 04.38
+-- Waktu pembuatan: 09 Jan 2018 pada 07.05
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
 
@@ -23,49 +23,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
---
-
-CREATE TABLE IF NOT EXISTS `admin` (
-  `USERNAME` varchar(500) NOT NULL,
-  `PASSWORD` varchar(500) DEFAULT NULL,
-  PRIMARY KEY (`USERNAME`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `admin`
---
-
-INSERT INTO `admin` (`USERNAME`, `PASSWORD`) VALUES
-('admin', '21232f297a57a5a743894a0e4a801fc3');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `customer`
---
-
-CREATE TABLE IF NOT EXISTS `customer` (
-  `NAMA_CUST` varchar(500) DEFAULT NULL,
-  `TELP` decimal(8,0) DEFAULT NULL,
-  `TANGGAL` date NOT NULL,
-  `USERNAME` varchar(500) DEFAULT NULL,
-  `JENIS_ACARA` varchar(500) DEFAULT NULL,
-  `JAM` varchar(500) DEFAULT NULL,
-  `KETERANGAN` text,
-  PRIMARY KEY (`TANGGAL`),
-  KEY `FK_MEMESAN` (`USERNAME`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `konfirmasi_pembayaran`
 --
 
 CREATE TABLE IF NOT EXISTS `konfirmasi_pembayaran` (
   `KD_BOOKING` varchar(500) NOT NULL,
-  `TANGGAL` date DEFAULT NULL,
+  `TANGGAL` varchar(500) DEFAULT NULL,
   `USERNAME` varchar(500) DEFAULT NULL,
   `NAMA_KONFIR` varchar(500) DEFAULT NULL,
   `NO_REKENING` decimal(8,0) DEFAULT NULL,
@@ -77,14 +40,16 @@ CREATE TABLE IF NOT EXISTS `konfirmasi_pembayaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Dumping data untuk tabel `konfirmasi_pembayaran`
 --
 
+INSERT INTO `konfirmasi_pembayaran` (`KD_BOOKING`, `TANGGAL`, `USERNAME`, `NAMA_KONFIR`, `NO_REKENING`, `JML_UANG`, `STATUS`) VALUES
+('9ui456', '21-09-2018', 'admin', 'Ridha Nadhira', 99999999, 600000, 'BELUM'),
+('9ui457', '21-09-2018', 'admin', 'Ridha Nadhira', 99999999, 600000, 'BELUM');
+
 --
--- Ketidakleluasaan untuk tabel `customer`
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
-ALTER TABLE `customer`
-  ADD CONSTRAINT `FK_MEMESAN` FOREIGN KEY (`USERNAME`) REFERENCES `admin` (`USERNAME`);
 
 --
 -- Ketidakleluasaan untuk tabel `konfirmasi_pembayaran`

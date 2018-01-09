@@ -36,13 +36,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger">Log Out</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url(); ?>index.php/admin/logout">Log Out</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
+            <?php
+                $notif = $this->session->flashdata('notif');
+                if(!empty($notif)){
+                    echo '
+                        <div class="alert alert-danger">
+                        '.$notif.'
+                        </div>
+                    ';
+                }
+            ?>
     <section id="admin_view">
       <div class="container">
         <div class="row">
@@ -58,15 +67,15 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nomor Pemesanan</th>
+                                            <th>Kode Pemesanan</th>
                                             <th>Nama Lengkap</th>
                                             <th>Nomor Telepon</th>
-                                            <th>Nomor Rekening</th>
-                                            <th>Tanggal Pemesanan</th>
+                                            <th>Tanggal</th>
+                                            <th>Jam</th>
                                             <th>Jenis Acara</th>
-                                            <th>Jam Pelakasanaan</th>
-                                            <th>Jumlah Transfer</th>
                                             <th>Keterangan</th>
+                                            <th>Status</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -75,11 +84,12 @@
                                             echo'
                                                 <tr>
                                                     <td>'.$data->KD_BOOKING.'</td>
+                                                    <td>'.$data->NAMA_CUST.'</td>
+                                                    <td>'.$data->TELP.'</td>
                                                     <td>'.$data->TANGGAL.'</td>
-                                                    <td>'.$data->USERNAME.'</td>
-                                                    <td>'.$data->NAMA_KONFIR.'</td>
-                                                    <td>'.$data->NO_REKENING.'</td>
-                                                    <td>'.$data->JML_UANG.'</td>
+                                                    <td>'.$data->JAM.'</td>
+                                                    <td>'.$data->JENIS_ACARA.'</td>
+                                                    <td>'.$data->KETERANGAN.'</td>
                                                     <td>'.$data->STATUS.'</td>
                                                     <td>
                                                         <a href="#" class="fa fa-edit">

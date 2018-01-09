@@ -37,13 +37,23 @@ class Admin extends CI_Controller {
 	{
 		if($this->session->userdata('logged_in') == TRUE)
 		{
-			$data['main_view'] = 'admin_view';
+			// $data['main_view'] = 'admin_view';
 			$data['pesanan'] = $this->admin_model->get_data_pesanan();
 			$this->load->view('admin_view', $data);
 		}
 		else{
 			redirect('admin');
 		}
+	}
+	public function logout()
+	{
+		$data = array(
+			'username'	=> '',
+			'logged_in'	=>	FALSE
+			);
+
+		$this->session->sess_destroy();
+		redirect(base_url('index.php/admin'));
 	}
 }
 
