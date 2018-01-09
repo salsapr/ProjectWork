@@ -45,6 +45,16 @@ class Admin extends CI_Controller {
 			redirect('admin');
 		}
 	}
+	public function logout()
+	{
+		$data = array(
+			'username'	=> '',
+			'logged_in'	=>	FALSE
+			);
+
+		$this->session->sess_destroy();
+		redirect(base_url('index.php/admin'));
+	}
 }
 
 /* End of file admin.php */
