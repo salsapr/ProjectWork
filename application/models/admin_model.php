@@ -30,6 +30,13 @@ class Admin_model extends CI_Model {
 			return FALSE;
 		}
 	}
+	function get_data_pesanan()
+	{
+		return $this->db->order_by('customer.TANGGAL','ASC')
+						->join('konfirmasi_pembayaran', 'konfirmasi_pembayaran.TANGGAL = customer.TANGGAL')
+						->get('customer')
+						->result();
+	}
 
 }
 
