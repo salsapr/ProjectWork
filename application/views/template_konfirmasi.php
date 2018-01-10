@@ -54,26 +54,33 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+          <?php
+              if (!empty($notif)) {
+              echo '<div class="alert alert-danger">';
+              echo $notif;
+              echo '</div>';
+            }
+          ?>
+            <form id="target" method="post" action="<?php echo base_url();?>konfirmasi/konfir">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="id" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
+                    <input class="form-control" id="kd_booking" name="kd_booking" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Silahkan isi nama Anda.">
+                    <input class="form-control" id="nama_konfir" name="nama_konfir" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Silahkan isi nama Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="email" type="rek" placeholder="Nama Rekening" required data-validation-required-message="Silahkan isi nama rekening Anda.">
+                    <input class="form-control" id="no_rekening" name="no_rekening" type="text" placeholder="Nama Rekening" required data-validation-required-message="Silahkan isi nama rekening Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="uang" placeholder="Jumlah Uang" required data-validation-required-message="Silahkan isi jumlah uang yang telah Anda bayar.">
+                    <input class="form-control" id="jml_uang" name="jml_uang" type="text" placeholder="Jumlah Uang" required data-validation-required-message="Silahkan isi jumlah uang yang telah Anda bayar.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -81,7 +88,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Kirim</button>
+                  <input type="submit" name="send" id="other" class="btn btn-primary btn-xl text-uppercase" value="KIRIM" />
                 </div>
               </div>
             </form>
