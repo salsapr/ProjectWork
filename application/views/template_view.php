@@ -173,6 +173,22 @@
         <div class="row">
           <div class="col-lg-12">
             <ul class="timeline">
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                   <!-- <i class="rounded-circle fa fa-file-text-o fa-stack fa-4x fa-inverse"></i> -->              
+                   <img class="rounded-circle img-fluid" src="<?php echo base_url(); ?>assets/img/about/ideas-icon.png" alt="">               
+                  </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Hal yang wajib diketahui,</h4>
+                    <h4 class="subheading">Daftar Harga</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Even pernikahan dikenakan biaya Rp 4.000.000 sudah mendapatkan fasilitas yang ada.</p>
+                    <p class="text-muted">Even sosial dikenakan biaya Rp 2.000.000 sudah mendapatkan fasilitas yang ada.</p>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div class="timeline-image">
                    <!-- <i class="rounded-circle fa fa-file-text-o fa-stack fa-4x fa-inverse"></i> -->              
