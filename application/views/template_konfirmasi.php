@@ -54,13 +54,9 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-          <?php
-              if (!empty($notif)) {
-              echo '<div class="alert alert-danger">';
-              echo $notif;
-              echo '</div>';
-            }
-          ?>
+          <?php if ($this->session->flashdata('notif')):?>
+                <div class="alert alert-info"><?php echo $this->session->flashdata('notif');?></div>
+          <?php endif;?>
             <form id="target" method="post" action="<?php echo base_url();?>konfirmasi/konfir">
               <div class="row">
                 <div class="col-md-6">

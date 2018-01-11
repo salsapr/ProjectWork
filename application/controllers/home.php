@@ -28,6 +28,7 @@ class home extends CI_Controller {
 				if($this->pesan_model->pesan()==TRUE)
 				{
 					$data['notif'] = 'Validasi sukses';
+					$data['tanggal'] = $this->input->post('tanggal');
 					$this->load->view('template_view',$data);
 				}else{
 					$data['notif'] = 'Validasi gagal';

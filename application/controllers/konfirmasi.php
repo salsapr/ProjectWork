@@ -24,16 +24,16 @@ class konfirmasi extends CI_Controller {
 			if($this->form_validation->run() == TRUE){
 				if($this->konfirmasi_model->konfirmasi()==TRUE)
 				{
-					$data['notif'] = 'Konfirmasi Pembayaran Sukses';
-					$this->load->view('template_konfirmasi',$data);
+					$this->session->set_flashdata('notif', 'Konfirmasi Pembayaran Sukses');
+					redirect('konfirmasi');
 				}else{
-					$data['notif'] = 'Konfirmasi Pembayaran Gagal';
-					$this->load->view('template_konfirmasi',$data);
+					$this->session->set_flashdata('notif', 'Konfirmasi Pembayaran Gagal');
+					redirect('konfirmasi');
 				}
 			}else{
 				//jika gagal
-				$data['notif'] = validation_errors();
-				$this->load->view('template_konfirmasi',$data);
+				$this->session->set_flashdata('notif', validation_errors());
+				redirect('konfirmasi');
 			}
 		}
 		

@@ -278,20 +278,22 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <?php
-                    function generateCode(){
-                      $done = 0;
-                      do{
-                        $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-                          $code = '';
-                          for ($i = 0; $i < 7; $i++){
-                              $code .= $characters[mt_rand(0, 61)];
-                          }
-                          $done = 1;
-                      }while($done != 1);
-                      return $code;
-                    }
-                  ?>
-                  <input type="text" name="code" value="<?php echo generateCode(); ?>">
+                      function generateCode(){
+                        $done = 0;
+                        do{
+                          $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+                            $code = '';
+                            for ($i = 0; $i < 7; $i++){
+                                $code .= $characters[mt_rand(0, 61)];
+                            }
+                            $done = 1;
+                        }while($done != 1);
+                        return $code;
+                      }
+
+                      $code = generateCode();
+                    ?>
+                    <input type="hidden" name="generatecode" value="<?php echo $code;?>">
                 </div><!-- samllekom -->
                 <div class="col-md-6">
                 <div class="form-group">
@@ -310,7 +312,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <input type="submit" name="send" id="other" class="btn btn-primary btn-xl" value="KIRIM" />
+                  <input type="submit" name="send" id="other" class="btn btn-primary btn-xl" value="KIRIM" data-toggle="modal" />
                 </div>
               </div>
             </form>
@@ -319,6 +321,34 @@
       </div>
     </section>
 
+
+<!-- Modal -->
+<?php if(isset($tanggal)):?>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kode Pemesanan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Kode Pemesanan Anda : <?php echo generateCode(); ?>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#myModal').modal({ show : true});
+  </script>
+<?php endif;?>
+
+</body>
     <!-- tim -->
     <section class="bg-light" id="tim">
       <div class="container">
