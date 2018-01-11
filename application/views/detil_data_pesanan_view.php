@@ -31,6 +31,14 @@
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 										<input type="text" id="tanggal" name="tanggal" autofocus placeholder="Tanggal" class="form-control" disabled value="<?php  echo $detil->TANGGAL?>" />
 									</div><br>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+										<input type="text" id="jam" name="jam" autofocus placeholder="Jam" class="form-control" disabled value="<?php  echo $detil->JAM?>" />
+									</div><br>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+										<input type="text" id="jenis_acara" name="jenis_acara" autofocus placeholder="Jenis Acara" class="form-control" disabled value="<?php  echo $detil->JENIS_ACARA?>" />
+									</div><br>
 						    		<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
 										<textarea id="alamat" name="keterangan" placeholder="Keterangan" class="form-control" disabled><?php  echo $detil->KETERANGAN ?></textarea>
@@ -38,12 +46,13 @@
 						    		
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<input type="text" id="asal_smp" name="asal_smp" autofocus placeholder="Asal SMP" class="form-control" disabled value="<?php  echo $detil->asal_smp ?>" />
+										<input type="text" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" />
 									</div>
 								</div>
 							
 								<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="margin-top: 10px;">
-									<a href="<?php echo base_url(); ?>admin/data_pesanan/" class="btn btn-md btn-primary">Kembali</a>
+									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-default">Kembali</a>
+									<a href="<?php echo base_url(); ?>admin/update/" class="btn btn-md btn-primary">Simpan</a>
 								</div>
 							</div>
 						</div>
