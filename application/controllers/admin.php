@@ -91,7 +91,7 @@ class Admin extends CI_Controller {
 			);
 
 		$this->session->sess_destroy();
-		redirect(base_url('index.php/admin'));
+		redirect(base_url('admin'));
 	}
 }
 
