@@ -59,6 +59,17 @@ class Admin extends CI_Controller {
 		}
 	}
 
+	function detil_data_pesanan()
+	{
+		if($this->session->userdata('logged_in') == TRUE){
+			$tanggal = $this->uri->segment(3);
+			$data['detil'] = $this->admin_model->get_data_pesanan_by_tgl($tanggal);
+			$this->load->view('detil_data_pesanan_view',$data);
+		}else{
+			redirect('admin');
+		}
+	}
+
 	public function data_pembayaran()
 	{
 		if($this->session->userdata('logged_in') == TRUE)

@@ -12,6 +12,7 @@ class Pesan_model extends CI_Model {
 		$data = array
 		(
 			'NAMA_CUST'		=> $this->input->post('nama_cust'),
+			'KD_BOOKING'	=> $this->input->post('generatecode'),
 			'TELP'			=> $this->input->post('telp'),
 			'TANGGAL'		=> $this->input->post('tanggal'),
 			'JAM'			=> $this->input->post('jam'),
@@ -19,6 +20,15 @@ class Pesan_model extends CI_Model {
 			'KETERANGAN'	=> $this->input->post('keterangan')
 		);
 		$this->db->insert('customer', $data);
+
+		$object = array(
+			'KD_BOOKING'	=> $this->input->post('generatecode'),
+			'TANGGAL'		=> $this->input->post('tanggal'),
+			'NAMA_KONFIR'	=> $this->input->post('nama_cust'),
+			'STATUS'		=> 'nyicil'
+		);
+
+		$this->db->insert('konfirmasi_pembayaran',$object);
 
 		if($this->db->affected_rows() > 0)
 		{

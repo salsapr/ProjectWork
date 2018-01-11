@@ -91,7 +91,7 @@
                                                     <td>'.$data->KETERANGAN.'</td>
                                                     <td>'.$data->STATUS.'</td>
                                                     <td>
-                                                        <a href="#" class="fa fa-edit">
+                                                        <a href="'.base_url().'admin/detil_data_pesanan/'.$data->TANGGAL.'" class="fa fa-edit">
                                                         <a href="#" class="fa fa-trash-o">
                                                         
                                                     </td>

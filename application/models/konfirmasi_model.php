@@ -11,12 +11,12 @@ public function __construct()
 	{
 		$data = array
 		(
-			'KD_BOOKING'		=> $this->input->post('kd_booking'),
-			'NAMA_KONFIR'		=> $this->input->post('nama_konfir'),
 			'NO_REKENING'		=> $this->input->post('no_rekening'),
-			'JML_UANG'			=> $this->input->post('jml_uang')
+			'JML_UANG'			=> $this->input->post('jml_uang'),
+			'STATUS'			=> 'lunas'
 		);
-		$this->db->insert('konfirmasi_pembayaran', $data);
+		$this->db->where('KD_BOOKING',$this->input->post('kd_booking'))
+				 ->update('konfirmasi_pembayaran', $data);
 
 		if($this->db->affected_rows() > 0)
 		{
