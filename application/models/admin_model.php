@@ -39,9 +39,10 @@ class Admin_model extends CI_Model {
 	}
 	function get_data_pesanan_by_tgl($tanggal)
 	{
-		return $this->db->join('konfirmasi_pembayaran', 'konfirmasi_pembayaran.TANGGAL = customer.TANGGAL')
+		return $this->db->where('customer.TANGGAL',$tanggal)
+						->join('konfirmasi_pembayaran', 'konfirmasi_pembayaran.TANGGAL = customer.TANGGAL')
 						->get('customer')
-						->result();
+						->row();
 	}
 }
 
