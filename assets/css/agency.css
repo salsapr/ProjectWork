@@ -7,6 +7,9 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+background {
+  background-color: black;
+}
 p {
   line-height: 1.75; }
 

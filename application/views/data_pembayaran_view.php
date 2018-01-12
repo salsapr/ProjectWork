@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Pembayaran</title>
+    <title>Penyewaan Aula SMK Telkom Malang</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,8 +24,22 @@
     <link href="<?php echo base_url(); ?>assets/css/agency.css" rel="stylesheet">
 
   </head>
-  <body id="page-top">
-     <?php
+  <body id="page-top" style="background-image: url('<?php echo base_url();?>assets/img/header-fix.jpg')">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-danger">Kembali</a>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/logout">Keluar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+            <?php
                 $notif = $this->session->flashdata('notif');
                 if(!empty($notif)){
                     echo '
@@ -35,7 +49,7 @@
                     ';
                 }
             ?>
-       <section id="admin_view">
+    <section id="admin_view">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -47,43 +61,33 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="table-responsive">
-                                <!-- <table class="table table-striped">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Kode Pemesanan</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>Nomor Telepon</th>
+                                            <th>Kode Booking</th>
                                             <th>Tanggal</th>
-                                            <th>Jam</th>
-                                            <th>Jenis Acara</th>
-                                            <th>Keterangan</th>
+                                            <th>Nama Pemesan</th>
+                                            <th>Nomor Rekening</th>
+                                            <th>Jumlah Uang (Rp)</th>
                                             <th>Status</th>
-                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        foreach ($pesanan as $data) {
+                                        foreach ($pembayaran as $data) {
                                             echo'
                                                 <tr>
                                                     <td>'.$data->KD_BOOKING.'</td>
-                                                    <td>'.$data->NAMA_CUST.'</td>
-                                                    <td>'.$data->TELP.'</td>
                                                     <td>'.$data->TANGGAL.'</td>
-                                                    <td>'.$data->JAM.'</td>
-                                                    <td>'.$data->JENIS_ACARA.'</td>
-                                                    <td>'.$data->KETERANGAN.'</td>
+                                                    <td>'.$data->NAMA_KONFIR.'</td>
+                                                    <td>'.$data->NO_REKENING.'</td>
+                                                    <td>'.$data->JML_UANG.'</td>
                                                     <td>'.$data->STATUS.'</td>
-                                                    <td>
-                                                        <a href="#" class="fa fa-edit">
-                                                        <a href="#" class="fa fa-trash-o">
-                                                        
-                                                    </td>
-                                                </tr>
-                                            ';
+                                                    </tr>
+                                                ';
                                         }
 
-                                        ?> -->
+                                        ?>
                                     </tbody>
                                  </table>
                             </div>

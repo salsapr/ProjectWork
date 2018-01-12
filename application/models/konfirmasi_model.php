@@ -13,7 +13,7 @@ public function __construct()
 		(
 			'NO_REKENING'		=> $this->input->post('no_rekening'),
 			'JML_UANG'			=> $this->input->post('jml_uang'),
-			'STATUS'			=> 'lunas'
+			'STATUS'			=> 'LUNAS'
 		);
 		$this->db->where('KD_BOOKING',$this->input->post('kd_booking'))
 				 ->update('konfirmasi_pembayaran', $data);
