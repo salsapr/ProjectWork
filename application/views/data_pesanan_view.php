@@ -26,15 +26,16 @@
   </head>
   <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: black">
+  <body id="page-top" style="background-image: url('<?php echo base_url();?>assets/img/bismillah.jpg')">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
+        <a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-primary">Kembali</a>
+        
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
               <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/logout">Keluar</a>
-            </li>
-            <li class="nav-item">
-                <a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-danger">Kembali</a>
             </li>
           </ul>
         </div>
@@ -51,7 +52,7 @@
                 }
             ?>
     <section id="admin_view">
-      <div class="container">
+      <div class="container" style="color: white;>
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Data Pesanan</h2>

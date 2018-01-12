@@ -24,11 +24,11 @@
     <link href="<?php echo base_url(); ?>assets/css/agency.css" rel="stylesheet">
 
   </head>
-  <body id="page-top" style="background-image: url('<?php echo base_url();?>assets/img/header-fix.jpg')">
+  <body id="page-top" style="background-image: url('<?php echo base_url();?>assets/img/bismillah.jpg')">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-danger">Kembali</a>
+        <a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-primary">Kembali</a>
         
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
@@ -50,7 +50,7 @@
                 }
             ?>
     <section id="admin_view">
-      <div class="container">
+      <div class="container" style="color: white;">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Data Pembayaran</h2>
