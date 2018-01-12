@@ -59,18 +59,16 @@
           <?php endif;?>
             <form id="target" method="post" action="<?php echo base_url();?>konfirmasi/konfir">
               <div class="row">
+                <div class="col-md-3">
+                  
+                 
+                </div>
+
                 <div class="col-md-6">
                   <div class="form-group">
                     <input class="form-control" id="kd_booking" name="kd_booking" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
-                  <div class="form-group">
-                    <input class="form-control" id="nama_konfir" name="nama_konfir" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Silahkan isi nama Anda.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
                   <div class="form-group">
                     <input class="form-control" id="no_rekening" name="no_rekening" type="text" placeholder="Nama Rekening" required data-validation-required-message="Silahkan isi nama rekening Anda.">
                     <p class="help-block text-danger"></p>
@@ -79,6 +77,9 @@
                     <input class="form-control" id="jml_uang" name="jml_uang" type="text" placeholder="Jumlah Uang" required data-validation-required-message="Silahkan isi jumlah uang yang telah Anda bayar.">
                     <p class="help-block text-danger"></p>
                   </div>
+                </div>
+                <div class="col-md-3">
+                  
                 </div>
 
                 <div class="clearfix"></div>

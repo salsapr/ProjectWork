@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type="text/javascript">
+   $(function(){
+   $("#tanggal").datepicker({ minDate: 0 });
+            $('#tanggal').datepicker({dateFormat: 'yy-mm-dd'});
+   });
+  </script>
+
+  <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url(); ?>assets/js/jquery.validate.min.js" type="text/javascript"></script>  
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/sunny/jquery-ui.css" type="text/css" rel="stylesheet"/>
+
+
   <head>
 
     <meta charset="utf-8">
@@ -286,7 +298,7 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="day" name="tanggal" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
+                    <input class="form-control" id="datepicker" name="tanggal" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
