@@ -11,6 +11,7 @@ public function __construct()
 	{
 		$data = array
 		(
+			'NAMA_KONFIR'	=> $this->input->post('nama_konfir'),
 			'NO_REKENING'		=> $this->input->post('no_rekening'),
 			'JML_UANG'			=> $this->input->post('jml_uang')
 		);
