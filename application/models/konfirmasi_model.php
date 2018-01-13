@@ -12,8 +12,7 @@ public function __construct()
 		$data = array
 		(
 			'NO_REKENING'		=> $this->input->post('no_rekening'),
-			'JML_UANG'			=> $this->input->post('jml_uang'),
-			'STATUS'			=> 'LUNAS'
+			'JML_UANG'			=> $this->input->post('jml_uang')
 		);
 		$this->db->where('KD_BOOKING',$this->input->post('kd_booking'))
 				 ->update('konfirmasi_pembayaran', $data);

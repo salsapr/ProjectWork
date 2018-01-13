@@ -24,8 +24,7 @@ class Pesan_model extends CI_Model {
 		$object = array(
 			'KD_BOOKING'	=> $this->input->post('generatecode'),
 			'TANGGAL'		=> $this->input->post('tanggal'),
-			'NAMA_KONFIR'	=> $this->input->post('nama_cust'),
-			'STATUS'		=> 'BELUM BAYAR'
+			'NAMA_KONFIR'	=> $this->input->post('nama_konfir')
 		);
 
 		$this->db->insert('konfirmasi_pembayaran',$object);
