@@ -5,7 +5,6 @@ class home extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-
 		$this->load->model('pesan_model');
 		//Do your magic here
 	}
@@ -29,7 +28,9 @@ class home extends CI_Controller {
 				{
 					$data['notif'] = 'Validasi sukses';
 					$data['tanggal'] = $this->input->post('tanggal');
+
 					$this->load->view('template_view',$data);
+					redirect('home/pesanpesan');
 				}else{
 					$data['notif'] = 'Validasi gagal';
 					$this->load->view('template_view',$data);
@@ -42,6 +43,14 @@ class home extends CI_Controller {
 		}
 		
 	}
+
+	function pesanpesan()
+	{
+			$tanggal = $this->uri->segment(3);
+			$data['mesen'] = $this->pesan_model->get_data_pesanan_by_tgl($tanggal);
+			$this->load->view('kode_pesanan_view',$data);
+	}
+	
 
 }
 
