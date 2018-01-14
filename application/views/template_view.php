@@ -95,7 +95,7 @@
               <i class="fa fa-volume-up fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Sound</h4>
-             <p class="text-muted">Sound system beserta 2 microphone</p>            
+             <p>Sound system beserta 2 microphone</p>            
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -103,7 +103,7 @@
               <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Kursi</h4>
-            <p class="text-muted">Kursi lipat sebanyak 150 dan meja 4 set</p>
+            <p>Kursi lipat sebanyak 150 dan meja 4 set</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -111,7 +111,7 @@
               <i class="fa fa-user-secret fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Keamanan</h4>
-            <p class="text-muted">Keamanan dari Binmas, Babinsa dan Security</p>
+            <p>Keamanan dari Binmas, Babinsa dan Security</p>
           </div>
         </div>
       </div>
@@ -196,8 +196,9 @@
                     <h4 class="subheading">Daftar Harga</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Even pernikahan dikenakan biaya Rp 4.000.000 sudah mendapatkan fasilitas yang ada.</p>
-                    <p class="text-muted">Even sosial dikenakan biaya Rp 2.000.000 sudah mendapatkan fasilitas yang ada.</p>
+                    <p>Even pernikahan : Rp 4.000.000</p>
+                    <p>Even sosial : Rp 2.000.000</p>
+                    <p>NB: Harga sudah termasuk fasilitas</p>
                   </div>
                 </div>
               </li>
@@ -212,7 +213,7 @@
                     <h4 class="subheading">Isi Form Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut</p>
+                    <p>Isilah formulir pemesanan dengan lengkap dan benar kemudian "kirim" form tersebut</p>
                   </div>
                 </div>
               </li>
@@ -227,7 +228,7 @@
                     <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
+                    <p>Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
                   </div>
                 </div>
               </li>
@@ -242,7 +243,7 @@
                     <h4 class="subheading">Lakukan Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
+                    <p>Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
                   </div>
                 </div>
               </li>
@@ -257,7 +258,7 @@
                     <h4 class="subheading">Konfirmasi Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
+                    <p>Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
                   </div>
                 </div>
               </li>
