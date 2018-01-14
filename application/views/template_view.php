@@ -228,7 +228,7 @@
                     <h4 class="subheading">Dapatkan Kode Pemesanan</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia</p>
+                    <p>Anda selanjutnya akan mendapatkan kode pemesanan setelah mengisi lengkap form yang tersedia, jangan lupa screenshot</p>
                   </div>
                 </div>
               </li>
@@ -258,7 +258,8 @@
                     <h4 class="subheading">Konfirmasi Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>Setelah melakukan transfer, upload bukti pembayaran di tab "Konfirmasi" untuk pengonfirmasian kepada admin</p>
+                    <p>Setelah melakukan transfer, isi form konfirmasi pembayaran di tab "Konfirmasi"</p>
+                    <p>Jika ada pertanyaan silahkan hubungi Suko Harianto (0851-0207-7834)</p>
                   </div>
                 </div>
               </li>
