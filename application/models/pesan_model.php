@@ -1,4 +1,4 @@
-<?php
+<?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pesan_model extends CI_Model {
@@ -37,7 +37,20 @@ class Pesan_model extends CI_Model {
 		}	
 
 	}
-
+	function get_data_pesanan()
+	{
+		//untuk kode_pesanan_view
+		return $this->db->order_by('customer.TANGGAL','ASC')
+						->join('konfirmasi_pembayaran', 'konfirmasi_pembayaran.TANGGAL = customer.TANGGAL')
+						->get('customer')
+						->result();
+	}
+	function get_data_pesanan_by_tgl($tanggal)
+	{
+		return $this->db->where('customer.TANGGAL',$tanggal)
+						->get('customer')
+						->row();
+	}
 }
 
 /* End of file pesan_model.php */

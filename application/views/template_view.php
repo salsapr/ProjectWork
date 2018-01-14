@@ -296,15 +296,15 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="tlp" name="telp" type="tel" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
+                    <input class="form-control" id="tlp" name="telp" type="number" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="datepicker" name="tanggal" type="date" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
+                    <input class="form-control" id="datepicker" name="tanggal" type="date" placeholder="Tanggal Acara" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="jam" name="jam" type="jam" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
+                    <input class="form-control" id="jam" name="jam" type="time" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <?php
@@ -326,12 +326,18 @@
                     <input type="hidden" name="generatecode" value="<?php echo $code;?>">
                 </div><!-- samllekom -->
                 <div class="col-md-6">
-                <div class="form-group">
-                    <select class="form-control" id="jenis_acara" name="jenis">
-                      <option value="">PILIH JENIS ACARA</option>
+                <div class="form-group" style="color: white; font-weight: bold;">
+                  <br>  
+                  <label>Jenis Acara   :</label>&nbsp &nbsp &nbsp 
+                  <input class="radio" type="radio" name="jenis" value="Acara Umum">Acara Umum &nbsp &nbsp &nbsp &nbsp 
+                  <input class="radio" type="radio" name="jenis" value="Acara Sosial">Acara Sosial
+
+                   <!--  <select class="form-control" id="jenis_acara" name="jenis">
+                      <option value="" disabled>PILIH JENIS ACARA</option>
                       <option value="acara umum">ACARA UMUM</option>
                       <option value="acara sosial">ACARA SOSIAL</option>
-                    </select>
+                     
+                    </select> -->
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
