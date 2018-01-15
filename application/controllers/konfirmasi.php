@@ -24,7 +24,7 @@ class konfirmasi extends CI_Controller {
 			if($this->form_validation->run() == TRUE){
 				if($this->konfirmasi_model->konfirmasi()==TRUE)
 				{
-					$this->session->set_flashdata('notif', 'Konfirmasi Pembayaran Sukses');
+					$this->session->set_flashdata('notif', 'Konfirmasi Pembayaran Anda Berhasil');
 					redirect('konfirmasi');
 				}else{
 					$this->session->set_flashdata('notif', 'Konfirmasi Pembayaran Gagal');
