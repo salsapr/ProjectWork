@@ -14,6 +14,7 @@
 		<h3 class="mdl-cell mdl-cell--12-col">Sewa Gedung Aula SMK Telkom</h3>
 
 		<div class="mdl-cell--12-col panel panel-default ">
+			 <a href="<?php echo base_url(); ?>home/exit/" class="btn btn-md btn-primary">Tutup</a>
 		<div class="panel-body">
 
 			<table widatah="85%"  class="table table-condensed" >

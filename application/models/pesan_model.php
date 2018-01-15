@@ -51,6 +51,12 @@ class Pesan_model extends CI_Model {
 						->get('customer')
 						->row();
 	}
+
+	function getcounttgl($tgl)
+	{
+		return $this->db->where('TANGGAL', $tgl)
+						->count_all_result('customer');
+	}
 }
 
 /* End of file pesan_model.php */
