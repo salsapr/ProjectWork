@@ -60,7 +60,7 @@ class home extends CI_Controller {
 			$this->load->view('kode_pesanan_view',$data);
 	}
 	
-	function exit()
+	function keluar()
 	{
 		$this->session->unset_userdata('tanggal');
 		redirect('home');

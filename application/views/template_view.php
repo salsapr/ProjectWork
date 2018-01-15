@@ -292,18 +292,22 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
+                    <span class="form-group" style="color: white; font-weight: bold;">Nama Lengkap :</span>
                     <input class="form-control" id="nama" name="nama_cust" type="text" placeholder="Nama Lengkap" required data-validation-required-message="Masukan Nama Lengkap.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                  <span class="form-group" style="color: white; font-weight: bold;">Nomor Telephone :</span>
                     <input class="form-control" id="tlp" name="telp" type="number" placeholder="Nomor Telepon" required data-validation-required-message="Masukan Nomor Telepon yang bisa dihubungi.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span class="form-group" style="color: white; font-weight: bold;">Tanggal Pelaksanaan :</span>
                     <input class="form-control" id="datepicker" name="tanggal" type="date" placeholder="Tanggal Acara" required data-validation-required-message="Masukan Tanggal yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span class="form-group" style="color: white; font-weight: bold;">Jam Pelaksanaan :</span>
                     <input class="form-control" id="jam" name="jam" type="time" placeholder="Jam Pelaksanaan" required data-validation-required-message="Masukan Jam yang akan dipesan.">
                     <p class="help-block text-danger"></p>
                   </div>
@@ -328,7 +332,7 @@
                 <div class="col-md-6">
                 <div class="form-group" style="color: white; font-weight: bold;">
                   <br>  
-                  <label>Jenis Acara   :</label>&nbsp &nbsp &nbsp 
+                  <label>Jenis Acara   :</label><br>&nbsp &nbsp &nbsp 
                   <input class="radio" type="radio" name="jenis" value="Acara Umum">Acara Umum &nbsp &nbsp &nbsp &nbsp 
                   <input class="radio" type="radio" name="jenis" value="Acara Sosial">Acara Sosial
 
@@ -341,7 +345,9 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span class="form-group" style="color: white; font-weight: bold;">Keterangan :</span>
                     <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan"></textarea>
+                    <span class="form-group" style="color: red;"></span>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
