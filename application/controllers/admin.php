@@ -37,6 +37,8 @@ class Admin extends CI_Controller {
 	{
 		if($this->session->userdata('logged_in') == TRUE)
 		{
+			//get notifikasi
+			$data['unread'] = $this->admin_model->get_notifikasi();
 			// $data['main_view'] = 'admin_view';
 			$data['pesanan'] = $this->admin_model->get_data_pesanan();
 			$this->load->view('admin_view', $data);
@@ -49,7 +51,9 @@ class Admin extends CI_Controller {
 	public function data_pesanan()
 	{
 		if($this->session->userdata('logged_in') == TRUE)
-		{
+		{	
+			//ubah semua data menjadi read
+			$this->admin_model->change_read();
 			// $data['main_view'] = 'admin_view';
 			$data['pesanan'] = $this->admin_model->get_data_pesanan();
 			$this->load->view('data_pesanan_view', $data);

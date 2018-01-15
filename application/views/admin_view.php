@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <b>
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan</a>
+        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
         &nbsp &nbsp <a style="color: white;">|</a> &nbsp &nbsp
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran</a>
         </b>

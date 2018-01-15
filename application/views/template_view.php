@@ -243,7 +243,8 @@
                     <h4 class="subheading">Lakukan Pembayaran</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>Segera lakukan pembayaran melalui rekening yang tersedia sesuai dengan harga yang telah di infromasikan</p>
+                    <p>Lakukan pembayaran ke rekening yang tersedia sesuai harga yang telah ditetapkan</p>
+                    <p>Batas maksimal pembayaran 6 hari setelah pemesanan</p>
                   </div>
                 </div>
               </li>
@@ -413,16 +414,6 @@
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-               <!--  <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -438,16 +429,6 @@
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <!-- <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -463,16 +444,6 @@
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <!-- <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li> -->
               </ul>
             </div>
           </div>

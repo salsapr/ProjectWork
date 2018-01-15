@@ -7,6 +7,27 @@ class Admin_model extends CI_Model {
 		parent::__construct();
 		//Do your magic here
 	}
+
+	public function get_notifikasi()
+	{
+		return $this->db->select('count(*) as unread')
+						->where('read', 'unread')
+						->get('customer')
+						->row()->unread;
+	}
+
+	public function change_read(){
+		$data = array('read' => 'read');
+		$this->db->update('customer', $data);
+
+		if($this->db->affected_rows() >0)
+		{
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+
 	function cek_user()
 	{
 		$username = $this->input->post('username');

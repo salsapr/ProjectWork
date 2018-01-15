@@ -24,8 +24,7 @@ class home extends CI_Controller {
 			$this->form_validation->set_rules('keterangan','Keterangan','trim');
 			
 			if($this->form_validation->run() == TRUE){
-				$count = $this->pesan_model->getcounttgl($this->input->post('tanggal'));
-				if ($count == 0) {
+				if (count($this->pesan_model->getcounttgl($this->input->post('tanggal'))) == 0) {
 					if($this->pesan_model->pesan()==TRUE)
 					{
 						$data['notif'] = 'Validasi sukses';
@@ -43,7 +42,8 @@ class home extends CI_Controller {
 						$this->load->view('template_view',$data);
 					}
 				} else {
-					//disini tempat notif keika tanggal duplikat
+					//disini tempat notif keTika tanggal duplikat
+					$this->load->view('tanggalsama_view', $data);
 				}
 			}else{
 				//jika gagal
@@ -54,13 +54,17 @@ class home extends CI_Controller {
 		
 	}
 
-	function pesanpesan()
+	public function pesanpesan()
 	{
 			$data['mesen'] = $this->pesan_model->get_data_pesanan_by_tgl($this->session->userdata('tanggal'));
 			$this->load->view('kode_pesanan_view',$data);
 	}
 	
+<<<<<<< HEAD
 	function keluar()
+=======
+	public function keluar()
+>>>>>>> a42d9b199c60fcf173efa0eaabad22bfd0cf5cb8
 	{
 		$this->session->unset_userdata('tanggal');
 		redirect('home');
