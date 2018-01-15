@@ -30,7 +30,7 @@
       <div class="container">
         <b>
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan</a>
-        &nbsp &nbsp | &nbsp &nbsp
+        &nbsp &nbsp <a style="color: white;">|</a> &nbsp &nbsp
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran</a>
         </b>
         <div class="collapse navbar-collapse" id="navbarResponsive">
