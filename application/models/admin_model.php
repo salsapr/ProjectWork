@@ -65,6 +65,53 @@ class Admin_model extends CI_Model {
 						->get('customer')
 						->row();
 	}
+	function update_status($tanggal)
+	{
+		$data = array(
+					'status'	=> $this->input->post('status')
+		);
+		
+		$this->db->where('tanggal', $tanggal)
+				->update('customer', $data);
+
+		if($this->db->affected_rows() > 0){
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+		/*$query = $this->db->get('customer');
+		$query_result = $query->result();
+		return $query_result;
+		}*/
+		// Function To Fetch Selected Student Record
+		/*function update($data){
+		$this->db->select('*');
+		$this->db->from('customer');
+		$this->db->where('tanggal', $data);
+		$query = $this->db->get();
+		$result = $query->result();
+		return $result;
+		}*/
+		// Update Query For Selected Student
+		/*function update_student_id1($id,$data){
+		$this->db->where('student_id', $id);
+		$this->db->update('students', $data);
+		}*/
+		// $data = array(
+		// 	'status'		=> $this->input->post('status')
+		// 	);
+		// // 'status'	=> $this->input->post('status');
+		// //prose insert
+		// $this->db->where('tanggal', $tanggal)
+		// 		->update('customer', $data);
+
+		// 		//cek apakah berhasil insert data?
+		// 		if($this->db->affected_rows() > 0){
+		// 			return TRUE;
+		// 		} else {
+		// 			return FALSE;
+		// 		}
+	}
 }
 
 /* End of file admin_model.php */

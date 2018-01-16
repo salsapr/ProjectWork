@@ -9,10 +9,10 @@
 		<div class="container" style="max-width: 800px"><br>
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-					  	<div class="panel panel-info">
+					  	<div class=" panel-info">
 							<div class="panel-heading">Lihat Detil Data Pesanan</div>
 					    	<div class="panel-body">
-					    		<div class="col-md-9 col-sm-9 col-xs-9 col-lg-9"><div class="input-group">
+					    		<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12"><div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 										<input type="text" id="kd_booking" name="kd_booking" autofocus placeholder="Kode Pemesanan" class="form-control" disabled value="<?php echo $detil->KD_BOOKING ?>"/>
 									</div>
@@ -46,20 +46,27 @@
 						    		
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<input type="select" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" />
-										<select name="status" id="status" class="form-control">
-										  <option value="<?php  echo $detil->STATUS ?>">--Pilih Status--</option>
+<<<<<<< HEAD
+										<select type="text" name="status" id="status" autofocus placeholder="Status" class="form-control" value="<?php echo $detil->STATUS ?>">
+											<option value="Lunas">Lunas</option>
+											<option value="Selesai">Selesai</option>
+											<option Value="Batal">Batal</option>
+=======
+									<!-- 	<input type="select" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" /> -->
+										<select name="status" id="status" class="form-control" <?php  echo $detil->STATUS ?>>
+										  <option value="">--Pilih Status--</option>
 										  <option value="DP">DP</option>
 										  <option value="Lunas">Lunas</option>
 										  <option value="Selesai">Selesai</option>
 										  <option value="Batal">Batal</option>
+>>>>>>> b829027713949d8f95dd2e6543866d7675d8699d
 										</select>
 									</div>
 								</div>
 							
 								<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="margin-top: 10px;">
-									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-default">Kembali</a>
-									<a href="<?php echo base_url(); ?>admin/update/" class="btn btn-md btn-primary">Simpan</a>
+									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan" class="btn btn-md btn-default">Kembali</a>
+									<a href="<?php echo base_url(); ?>admin/update" class="btn btn-md btn-primary">Simpan</a>
 								</div>
 							</div>
 						</div>
