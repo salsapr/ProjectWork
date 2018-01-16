@@ -4,10 +4,11 @@
 		<title>Penyewaan Aula SMK Telkom Malang</title>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+		<link href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	</head>
 
 			
-	<body style="background-image: url('<?php echo base_url();?>assets/img/header-fix.jpg')">
+	<body style="background-color: lightgrey">
 		<div class="container" style="padding-top: 150px;">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4"></div>
@@ -39,8 +40,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4"></div>
 			</div>
 		</div>
 	</body>
+
 </html>

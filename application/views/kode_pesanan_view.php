@@ -34,14 +34,17 @@
         <!-- <div class="mdl-cell--12-col panel panel-default text-center">
 			</div> -->
           <div class="col-lg-12 text-center">
-            <h2 style="color: red" class="section-heading text-uppercase">Screenshoot! Catat Kode Booking!</h2>
-            <h3 class="section-subheading">Transfer ke no rekening BTN 93509930000011100 A/n TS-SMK TELKOM MALANG </h3>
+            <h2 style="color: grey" class="section-heading text-uppercase">Screenshoot! Catat Kode Booking!</h2>
+            <a>Transfer ke no rekening <a style="color: red;">BTN 93509930000011100</a> A/n TS-SMK TELKOM MALANG</a>
+            <br><p>
+            	
+            	
+            </p>
           </div>
         </div>
         <div class="row">
          	<table widatah="85%"  class="table table-condensed text-center" >
 			    <thead>
-
 			        <tr>   
 			            <th>Nama</th>
 			            <th>Kode Booking</th>
@@ -53,36 +56,35 @@
 			        </tr>    
 			    </thead>
 			    <tbody>
-
-			        
 			            <tr><td><?php echo $mesen->NAMA_CUST; ?></td>
-			                <td><?php echo $mesen->KD_BOOKING; ?></td>
+			                <td style="color: red"><?php echo $mesen->KD_BOOKING; ?></td>
 			                <td><?php echo $mesen->TELP; ?></td>
 			                <td><?php echo $mesen->TANGGAL; ?></td>
 			                <td><?php echo $mesen->JAM; ?></td>
 			                <td><?php echo $mesen->JENIS_ACARA; ?></td>
 			                <td><?php echo $mesen->KETERANGAN; ?></td>   
 			            </tr>
-
-	
 			    </tbody>
 			</table>
         </div>
-        <center><a href="<?php echo base_url(); ?>home/keluar" class="btn btn-md btn-primary">Tutup</a></center>
+        <center>
+            <h4>Batas waktu transfer maksimal 6 hari setelah mendapat kode booking</h4>
+            <a href="<?php echo base_url(); ?>home/keluar" class="btn btn-md btn-primary">Tutup</a>
+        </center>
         </div>
     </section>
-<script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="<?php echo base_url(); ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    	<script src="<?php echo base_url(); ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="<?php echo base_url(); ?>assets/js/jqBootstrapValidation.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/contact_me.js"></script>
+    	<script src="<?php echo base_url(); ?>assets/js/jqBootstrapValidation.js"></script>
+    	<script src="<?php echo base_url(); ?>assets/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="<?php echo base_url(); ?>assets/js/agency.min.js"></script>
+    	<script src="<?php echo base_url(); ?>assets/js/agency.min.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		</body>
