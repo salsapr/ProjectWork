@@ -46,13 +46,17 @@
 						    		
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<input type="text" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" />
+										<select type="text" name="status" id="status" autofocus placeholder="Status" class="form-control" value="<?php echo $detil->STATUS ?>">
+											<option value="Lunas">Lunas</option>
+											<option value="Selesai">Selesai</option>
+											<option Value="Batal">Batal</option>
+										</select>
 									</div>
 								</div>
 							
 								<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="margin-top: 10px;">
-									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan/" class="btn btn-md btn-default">Kembali</a>
-									<a href="<?php echo base_url(); ?>admin/update/" class="btn btn-md btn-primary">Simpan</a>
+									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan" class="btn btn-md btn-default">Kembali</a>
+									<a href="<?php echo base_url(); ?>admin/update" class="btn btn-md btn-primary">Simpan</a>
 								</div>
 							</div>
 						</div>

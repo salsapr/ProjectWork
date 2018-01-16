@@ -43,7 +43,7 @@ class home extends CI_Controller {
 					}
 				} else {
 					//disini tempat notif keTika tanggal duplikat
-					$this->load->view('tanggalsama_view', $data);
+					$this->load->view('tanggalsama_view');
 				}
 			}else{
 				//jika gagal

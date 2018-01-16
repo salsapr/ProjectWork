@@ -36,7 +36,7 @@
         <b>
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
         &nbsp &nbsp <a>|</a> &nbsp &nbsp
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran</a>
+        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
         </b>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
