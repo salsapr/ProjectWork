@@ -87,7 +87,6 @@ class Admin extends CI_Controller {
 		}
 	}
 
-<<<<<<< HEAD
 	public function update()
 	{
 		$tanggal = $this->uri->segment(3);
@@ -137,7 +136,6 @@ class Admin extends CI_Controller {
 		// 	$this->load->view('admin_view', $data);
 		// }
 		// }
-=======
 	public function data_pembatalan()
 	{
 		if($this->session->userdata('logged_in') == TRUE)
@@ -163,8 +161,6 @@ class Admin extends CI_Controller {
 			redirect('admin');
 		}
 	}
-
->>>>>>> b829027713949d8f95dd2e6543866d7675d8699d
 
 	public function logout()
 	{

@@ -35,17 +35,12 @@
       <div class="container">
         <b>
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
-<<<<<<< HEAD
-        &nbsp &nbsp <a>|</a> &nbsp &nbsp
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
-=======
         &nbsp <a>|</a> &nbsp
-        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran</a>
+        <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
         &nbsp <a>|</a> &nbsp
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembatalan">Data Pembatalan</a>
         &nbsp <a>|</a> &nbsp
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_history">History</a>
->>>>>>> b829027713949d8f95dd2e6543866d7675d8699d
         </b>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
