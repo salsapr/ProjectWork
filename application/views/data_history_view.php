@@ -10,7 +10,6 @@
 
     <title>Penyewaan Aula SMK Telkom Malang</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -29,6 +28,8 @@
     <meta name="viewport" content="widatah=device-widatah, initial-scale=1.0"/>
 
   </head>
+  <body id="page-top">
+    <!-- Navigation -->
   <body id="page-top" class="bg-light">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -58,7 +59,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Data Pembayaran</h2>
+            <h2 class="section-heading text-uppercase">History</h2>
           </div>
         </div>
             <div class="row">
@@ -69,31 +70,33 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
+                                            <th>Nama Pemesan</th>
                                             <th>Kode Booking</th>
+                                            <th>Nomor Telepon</th>
                                             <th>Tanggal</th>
-                                            <th>Nama Pengirim</th>
-                                            <th>Nomor Rekening</th>
-                                            <th>Jumlah Uang (Rp)</th>
-                                            <th>Status</th>
+                                            <th>Jam</th>
+                                            <th>Jenis Acara</th>
+                                            <th>Keterangan</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                   <!--  <tbody>
                                         <?php
-                                        foreach ($pembayaran as $data) {
+                                        foreach ($pesanan as $data) {
                                             echo'
                                                 <tr>
+                                                    <td>'.$data->NAMA_CUST.'</td>
                                                     <td>'.$data->KD_BOOKING.'</td>
+                                                    <td>'.$data->TELP.'</td>
                                                     <td>'.$data->TANGGAL.'</td>
-                                                    <td>'.$data->NAMA_KONFIR.'</td>
-                                                    <td>'.$data->NO_REKENING.'</td>
-                                                    <td>'.$data->JML_UANG.'</td>
-                                                    <td>'.$data->STATUS.'</td>
+                                                    <td>'.$data->JAM.'</td>
+                                                    <td>'.$data->JENIS_ACARA.'</td>
+                                                    <td>'.$data->KETERANGAN.'</td>              
                                                     </tr>
-                                                ';
+                                            ';
                                         }
 
                                         ?>
-                                    </tbody>
+                                    </tbody> -->
                                  </table>
                             </div>
                         </div>
