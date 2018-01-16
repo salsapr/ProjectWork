@@ -66,7 +66,7 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nama</th>
+                                            <th>Nama Pemesan</th>
                                             <th>Kode Booking</th>
                                             <th>Nomor Telepon</th>
                                             <th>Tanggal</th>

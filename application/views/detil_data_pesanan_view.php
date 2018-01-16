@@ -46,7 +46,14 @@
 						    		
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<input type="text" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" />
+										<input type="select" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" />
+										<select name="status" id="status" class="form-control">
+										  <option value="<?php  echo $detil->STATUS ?>">--Pilih Status--</option>
+										  <option value="DP">DP</option>
+										  <option value="Lunas">Lunas</option>
+										  <option value="Selesai">Selesai</option>
+										  <option value="Batal">Batal</option>
+										</select>
 									</div>
 								</div>
 							

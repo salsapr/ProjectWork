@@ -66,7 +66,7 @@
                                         <tr>
                                             <th>Kode Booking</th>
                                             <th>Tanggal</th>
-                                            <th>Nama Pemesan</th>
+                                            <th>Nama Pengirim</th>
                                             <th>Nomor Rekening</th>
                                             <th>Jumlah Uang (Rp)</th>
                                             <th>Status</th>
