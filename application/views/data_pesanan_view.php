@@ -10,7 +10,6 @@
 
     <title>Penyewaan Aula SMK Telkom Malang</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -22,11 +21,16 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>assets/css/agency.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+    <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="widatah=device-widatah, initial-scale=1.0"/>
 
   </head>
   <body id="page-top">
     <!-- Navigation -->
-  <body id="page-top" style="background-image: url('<?php echo base_url();?>assets/img/bismillah.jpg')">
+  <body id="page-top" class="bg-light">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -51,7 +55,7 @@
                     ';
                 }
             ?>
-    <section id="admin_view" style="color: white;">
+    <section id="admin_view">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
