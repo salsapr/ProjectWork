@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url(); ?>index.php/home/">Konfirmasi</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url(); ?>index.php/home/">Kembali ke Home</a>
             </li>
           </ul>
         </div>
