@@ -51,8 +51,8 @@
                     ';
                 }
             ?>
-    <section id="admin_view">
-      <div class="container" style="color: white;>
+    <section id="admin_view" style="color: white;">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Data Pesanan</h2>
