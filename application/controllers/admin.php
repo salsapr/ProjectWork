@@ -87,6 +87,33 @@ class Admin extends CI_Controller {
 		}
 	}
 
+	public function data_pembatalan()
+	{
+		if($this->session->userdata('logged_in') == TRUE)
+		{
+			// $data['main_view'] = 'admin_view';
+			$data['pembatalan'] = $this->admin_model->get_data_pesanan();
+			$this->load->view('data_pembatalan_view', $data);
+		}
+		else{
+			redirect('admin');
+		}
+	}
+
+	public function data_history()
+	{
+		if($this->session->userdata('logged_in') == TRUE)
+		{
+			// $data['main_view'] = 'admin_view';
+			$data['history'] = $this->admin_model->get_data_pesanan();
+			$this->load->view('data_history_view', $data);
+		}
+		else{
+			redirect('admin');
+		}
+	}
+
+
 	public function logout()
 	{
 		$data = array(
