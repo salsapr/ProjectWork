@@ -95,10 +95,6 @@ class Admin extends CI_Controller {
 		}
 	}
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 21e63231df5515621799b46316791496f5e02edc
 	public function update()
 	{
 		$tanggal = $this->uri->segment(3);
@@ -156,10 +152,7 @@ class Admin extends CI_Controller {
 		// 	$this->load->view('admin_view', $data);
 		// }
 		// }
-<<<<<<< HEAD
-=======
-
->>>>>>> 21e63231df5515621799b46316791496f5e02edc
+	
 	public function data_pembatalan()
 	{
 		if($this->session->userdata('logged_in') == TRUE)

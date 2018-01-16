@@ -2,15 +2,30 @@
 <html>
 	<head>
 		<title>Detil Data Pesanan </title>
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+		<link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url(); ?>assets/css/agency.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+    <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="widatah=device-widatah, initial-scale=1.0"/>
+
 	</head>
 	<body>
 		<div class="container" style="max-width: 800px"><br>
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 					  	<div class=" panel-info">
-							<div class="panel-heading">Lihat Detil Data Pesanan</div>
+							<div class="panel-heading"><h3 style="text-align: center;">Lihat Detil Data Pesanan</h3></div>
 					    	<div class="panel-body">
 					    		<form action="<?php echo base_url(); ?>admin/update/<?php echo $detil->TANGGAL; ?>" method="post">
 					    			<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12"><div class="input-group">
@@ -59,9 +74,9 @@
 									</div>
 								</div>
 							
-								<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="margin-top: 10px;">
-									<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan" class="btn btn-md btn-default">Kembali</a>
-									
+								<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="margin-top: 10px; text-align: center;">
+								<a href="<?php echo base_url(); ?>admin/data_transaksi_pesanan" class="btn btn-md btn-default">
+								Kembali</a>
 									<input type="submit" name="submit" value="Simpan" class="btn btn-primary">
 								</div>
 					    		</form>
