@@ -31,9 +31,8 @@
 	<section class="bg-light" id="tim">
       <div class="container">
         <div class="row">
-        <div class="mdl-cell--12-col panel panel-default text-center">
-			 <a href="<?php echo base_url(); ?>home/keluar" class="btn btn-md btn-primary">Tutup</a>
-			</div>
+        <!-- <div class="mdl-cell--12-col panel panel-default text-center">
+			</div> -->
           <div class="col-lg-12 text-center">
             <h2 style="color: red" class="section-heading text-uppercase">Screenshoot! Catat Kode Booking!</h2>
             <h3 class="section-subheading">Transfer ke no rekening BTN 93509930000011100 A/n TS-SMK TELKOM MALANG </h3>
@@ -69,6 +68,7 @@
 			    </tbody>
 			</table>
         </div>
+        <center><a href="<?php echo base_url(); ?>home/keluar" class="btn btn-md btn-primary">Tutup</a></center>
         </div>
     </section>
 <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
