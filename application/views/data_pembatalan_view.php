@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+8<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -79,9 +79,9 @@
                                             <th>Keterangan</th>
                                         </tr>
                                     </thead>
-                                   <!--  <tbody>
+                                    <tbody>
                                         <?php
-                                        foreach ($pesanan as $data) {
+                                        foreach ($pemba as $data) {
                                             echo'
                                                 <tr>
                                                     <td>'.$data->NAMA_CUST.'</td>
@@ -96,7 +96,7 @@
                                         }
 
                                         ?>
-                                    </tbody> -->
+                                    </tbody>
                                  </table>
                             </div>
                         </div>
