@@ -35,7 +35,11 @@
       <div class="container">
         <b>
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pesanan">Data Pesanan (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
+<<<<<<< HEAD
         &nbsp <a>|</a> &nbsp
+=======
+        &nbsp &nbsp <a>|</a> &nbsp &nbsp
+>>>>>>> 21e63231df5515621799b46316791496f5e02edc
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembayaran">Data Pembayaran (<?php if($unread != NULL){echo $unread; } else { echo '0';} ?>)</a>
         &nbsp <a>|</a> &nbsp
         <a class="js-scroll-trigger" href="<?php echo base_url(); ?>admin/data_pembatalan">Data Pembatalan</a>

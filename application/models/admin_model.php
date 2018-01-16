@@ -28,6 +28,10 @@ class Admin_model extends CI_Model {
 		}
 	}
 
+	public function lihat_batal(){
+
+	}
+
 	function cek_user()
 	{
 		$username = $this->input->post('username');
@@ -58,6 +62,10 @@ class Admin_model extends CI_Model {
 						->get('customer')
 						->result();
 	}
+
+
+
+
 	function get_data_pesanan_by_tgl($tanggal)
 	{
 		return $this->db->where('customer.TANGGAL',$tanggal)
@@ -68,11 +76,11 @@ class Admin_model extends CI_Model {
 	function update_status($tanggal)
 	{
 		$data = array(
-					'status'	=> $this->input->post('status')
+				'status'	=> $this->input->post('status')
 		);
 		
 		$this->db->where('tanggal', $tanggal)
-				->update('customer', $data);
+				->update('konfirmasi_pembayaran', $data);
 
 		if($this->db->affected_rows() > 0){
 			return TRUE;
