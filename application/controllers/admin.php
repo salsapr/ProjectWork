@@ -126,34 +126,8 @@ class Admin extends CI_Controller {
 			}
 		}
 	}
-		/*$data = array(
-			'status' => $this->input->post('Status')
-			);
-		$this->update_status->update($tanggal, $data);
-		$this->detil_data_pesanan();
-	}*/
-		// if ($this->session->userdata('logged_in')== TRUE) {
-		// 	$tanggal = $this->$this->uri->segment(3);
-
-		// if ($this->input->post('simpan')) {
-		// 	$this->form_validation->set_rules('status', 'Status', 'trim|required');
-		// 	if ($this->$this->form_validation->update_status($tanggal) == TRUE) {
-		// 		$data['main_view'] = 'admin_view';
-		// 		$data['notif'] = 'Edit Status Berhasil!';
-		// 		$this->load->view('admin_view', $data);
-		// 	} else {
-		// 		$data['main_view'] = 'admin_view';
-		// 		$data['notif'] = 'Edit Status Gagal!';
-		// 		$this->load->view('admin_view', $data);
-		// 	}
-		// } else {
-		// 	$data['main_view'] = 'admin_view';
-		// 	$data['notif'] = validation_errors;
-		// 	$this->load->view('admin_view', $data);
-		// }
-		// }
 	
-	public function data_pembatalan()
+/*	public function data_pembatalan()
 	{
 		if($this->session->userdata('logged_in') == TRUE)
 		{
@@ -177,7 +151,7 @@ class Admin extends CI_Controller {
 		else{
 			redirect('admin');
 		}
-	}
+	}*/
 
 	public function logout()
 	{

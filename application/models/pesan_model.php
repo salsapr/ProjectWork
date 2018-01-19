@@ -16,6 +16,7 @@ class Pesan_model extends CI_Model {
 			'TELP'			=> $this->input->post('telp'),
 			'TANGGAL'		=> $this->input->post('tanggal'),
 			'JAM'			=> $this->input->post('jam'),
+			'email'			=> $this->input->post('email'),
 			'JENIS_ACARA'	=> $this->input->post('jenis'),
 			'KETERANGAN'	=> $this->input->post('keterangan')
 		);

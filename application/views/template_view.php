@@ -330,8 +330,16 @@
                     ?>
                     <input type="hidden" name="generatecode" value="<?php echo $code;?>">
                 </div><!-- samllekom -->
+                
+                  
+
                 <div class="col-md-6">
-                <div class="form-group" style="color: white; font-weight: bold;">
+                  <div class="form-group">
+                     <span style="color: white; font-weight: bold;">Email :</span>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Email" required data-validation-required-message="Masukan Email Anda yang aktif.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                <div class="form-group" style="color: white; font-weight: bold;margin-top: -6%">
                   <br>  
                   <label>Jenis Acara   :</label><br>&nbsp &nbsp &nbsp 
                   <input class="radio" type="radio" name="jenis" value="Acara Umum">Acara Umum &nbsp &nbsp &nbsp &nbsp 
@@ -345,9 +353,9 @@
                     </select> -->
                     <p class="help-block text-danger"></p>
                   </div>
-                  <div class="form-group">
-                    <span class="form-group" style="color: white; font-weight: bold;">Keterangan :</span>
-                    <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan"></textarea>
+                  <div class="form-group" style="margin-top: -4%">
+                    <span style="color: white; font-weight: bold;">Keterangan :</span>
+                    <textarea class="form-control" id="ket" name="keterangan" placeholder="Keterangan" rows="1"></textarea>
                     <span class="form-group" style="color: red;"></span>
                     <p class="help-block text-danger"></p>
                   </div>
