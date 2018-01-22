@@ -81,6 +81,7 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span style="color: white;">Jumlah Uang :</span>
                     <input class="form-control" id="jml_uang" name="jml_uang" type="text" placeholder="Jumlah Uang" required data-validation-required-message="Silahkan isi jumlah uang yang telah Anda bayar.">
                     <p class="help-block text-danger"></p>
                   </div>
