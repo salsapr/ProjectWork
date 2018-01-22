@@ -102,21 +102,50 @@ class Admin extends CI_Controller {
 		if($this->input->post('submit')){
 			$this->form_validation->set_rules('status', 'status', 'trim|required');
 			if ($this->form_validation->run() == TRUE) {
-				if($this->admin_model->update_status($tanggal) == TRUE){
-/*					$data['main_view'] = 'admin_view';
+				
+/*				$data['main_view'] = 'admin_view';
+*/				$this->load->library('email');
+				$config = array(
+					'protocol'    => 'smtp',
+					'smtp_host'   => 'ssl://smtp.googlemail.com',
+					'smtp_port'   => 465,
+					//'auth'		  => TRUE,
+					'smtp_user'   => 'malabudif@gmail.com',
+					'smtp_pass'   => 'kademangan12',
+					'mailtype'    => 'html',
+					'wordwrap'    => TRUE,
 
-*/					
+				);
+				$this->email->initialize($config);
+				$this->email->set_newline("\r\n");
+				$this->email->from('malabudif@gmail.com','Administrator Penyewaan Aula SMK Telkom Malang');
+				$this->email->to($this->input->post('email'));
+				$this->email->subject('Pemesanan Sewa Aula SMK Telkom Malang');
+				$this->email->message('LUNAS');
+
+
+				if ($this->email->send()) {
+					if($this->admin_model->update_status($tanggal) == TRUE){
+
+						$data['unread'] = $this->admin_model->get_notifikasi();
+						$data['pesanan'] = $this->admin_model->get_data_pesanan();	
+						$data['notif'] = 'Edit Status Berhasil!';
+						$this->load->view('admin_view', $data);
+					}else{
+	/*					$data['main_view'] = 'admin_view';
+	*/					$data['notif'] = 'Edit Status Gagal!';
+						$data['unread'] = $this->admin_model->get_notifikasi();
+						$data['pesanan'] = $this->admin_model->get_data_pesanan();	
+						$this->load->view('data_pesanan_view', $data);
+					}
+				} else {
 					$data['unread'] = $this->admin_model->get_notifikasi();
 					$data['pesanan'] = $this->admin_model->get_data_pesanan();	
-					$data['notif'] = 'Edit Status Berhasil!';
+					$data['notif'] = 'Edit Status Gagal!';
 					$this->load->view('admin_view', $data);
-				}else{
-/*					$data['main_view'] = 'admin_view';
-*/					$data['notif'] = 'Edit Status Gagal!';
-					$data['unread'] = $this->admin_model->get_notifikasi();
-					$data['pesanan'] = $this->admin_model->get_data_pesanan();	
-					$this->load->view('data_pesanan_view', $data);
 				}
+
+				
 			}else{
 /*				$data['main_view'] = 'admin_view';
 */				$data['notif'] = validation_errors();

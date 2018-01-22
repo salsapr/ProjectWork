@@ -51,6 +51,7 @@
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 										<input type="text" id="jam" name="jam" autofocus placeholder="Jam" class="form-control" disabled value="<?php  echo $detil->JAM?>" />
 									</div><br>
+										<input type="hidden" id="email" name="email" autofocus placeholder="Email" class="form-control"  value="<?php  echo $detil->email?>" />
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 										<input type="text" id="jenis_acara" name="jenis_acara" autofocus placeholder="Jenis Acara" class="form-control" disabled value="<?php  echo $detil->JENIS_ACARA?>" />

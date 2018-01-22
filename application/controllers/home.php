@@ -33,7 +33,7 @@ class home extends CI_Controller {
 							'protocol'    => 'smtp',
 							'smtp_host'   => 'ssl://smtp.googlemail.com',
 							'smtp_port'   => 465,
-							'auth'		  => TRUE,
+							//'auth'		  => TRUE,
 							'smtp_user'   => 'malabudif@gmail.com',
 							'smtp_pass'   => 'kademangan12',
 							'mailtype'    => 'html',
@@ -46,7 +46,9 @@ class home extends CI_Controller {
 						$this->email->from('malabudif@gmail.com','Administrator Penyewaan Aula SMK Telkom Malang');
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Pemesanan Sewa Aula SMK Telkom Malang');
-						$this->email->message('Pemesanan Anda sudah terkirim!<br>Untuk pertanyaan dan info lebih lanjut silahkan hubungi 085102077834 - Suko atau via email blablab <br><br>Terimakasih<br><br><br>Admin Penyewaan Aula SMK Telkom');
+						$this->email->message('Pemesanan Anda sudah terkirim!<br>Untuk pertanyaan dan info lebih lanjut silahkan hubungi 
+							<b>085102077834</b> - Suko.  Kode Bookiong anda adalah <h2><b>'.$this->input->post('generatecode').'</b></h2>
+							<br><br>Terimakasih<br><br><br>Admin Penyewaan Aula SMK Telkom');
 
 
 							
