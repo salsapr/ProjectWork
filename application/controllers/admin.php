@@ -121,7 +121,9 @@ class Admin extends CI_Controller {
 				$this->email->from('malabudif@gmail.com','Administrator Penyewaan Aula SMK Telkom Malang');
 				$this->email->to($this->input->post('email'));
 				$this->email->subject('Pemesanan Sewa Aula SMK Telkom Malang');
-				$this->email->message('LUNAS');
+				$this->email->message('Pembayaran Anda telah dikonfirmasi oleh Admin dengan status <br><h4><b>LUNAS</b></h4>. Untuk persiapan acara, dapat dilakukan H-1 pelaksanaan. Terimakasih atas kepercayaan anda.
+					<br><br><b>Hormat Kami,</b>
+					<br>Sarana Prasarana SMK Telkom Malang');
 
 
 				if ($this->email->send()) {
