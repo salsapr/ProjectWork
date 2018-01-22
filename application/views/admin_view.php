@@ -78,6 +78,7 @@
                                             <th>Tanggal</th>
                                             <th>Jam</th>
                                             <th>Jenis Acara</th>
+                                            <th>Jumlah Uang</th>
                                             <th>Keterangan</th>
                                             <th>Status</th>
                                             <th>Aksi</th>
@@ -94,6 +95,7 @@
                                                     <td>'.$data->TANGGAL.'</td>
                                                     <td>'.$data->JAM.'</td>
                                                     <td>'.$data->JENIS_ACARA.'</td>
+                                                    <td>'.$data->JML_UANG.'</td>
                                                     <td>'.$data->KETERANGAN.'</td>
                                                     <td>'.$data->STATUS.'</td>
                                                     <td>
