@@ -76,6 +76,7 @@
                                             <th>Tanggal</th>
                                             <th>Jam</th>
                                             <th>Jenis Acara</th>
+                                            <th>Email</th>
                                             <th>Keterangan</th>
                                         </tr>
                                     </thead>
@@ -90,6 +91,7 @@
                                                     <td>'.$data->TANGGAL.'</td>
                                                     <td>'.$data->JAM.'</td>
                                                     <td>'.$data->JENIS_ACARA.'</td>
+                                                    <td>'.$data->email.'</td>
                                                     <td>'.$data->KETERANGAN.'</td>              
                                                     </tr>
                                             ';
