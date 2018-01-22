@@ -69,6 +69,7 @@
         </div>
         <center>
             <h4>Batas waktu transfer maksimal 6 hari setelah mendapat kode booking</h4>
+            <h4 style="color:red;">Silahkan cek email anda untuk melihat kode <i>booking</i></h4><br>
             <a href="<?php echo base_url(); ?>home/keluar" class="btn btn-md btn-primary">Tutup</a>
         </center>
         </div>
