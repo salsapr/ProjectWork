@@ -28,23 +28,29 @@ class home extends CI_Controller {
 				if (count($this->pesan_model->getcounttgl($this->input->post('tanggal'))) == 0) {
 					if($this->pesan_model->pesan()==TRUE)
 					{
+						$this->load->library('email');
 						$config = array(
 							'protocol'    => 'smtp',
 							'smtp_host'   => 'ssl://smtp.googlemail.com',
 							'smtp_port'   => 465,
+							'auth'		  => TRUE,
 							'smtp_user'   => 'malabudif@gmail.com',
 							'smtp_pass'   => 'kademangan12',
 							'mailtype'    => 'html',
-							'wordwrap'    => TRUE
+							'wordwrap'    => TRUE,
 
 						);
-						$this->load->library('email');
+
 						$this->email->initialize($config);
 						$this->email->set_newline("\r\n");
 						$this->email->from('malabudif@gmail.com','Administrator Penyewaan Aula SMK Telkom Malang');
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Pemesanan Sewa Aula SMK Telkom Malang');
 						$this->email->message('Pemesanan Anda sudah terkirim!<br>Untuk pertanyaan dan info lebih lanjut silahkan hubungi 085102077834 - Suko atau via email blablab <br><br>Terimakasih<br><br><br>Admin Penyewaan Aula SMK Telkom');
+
+
+							
+
 
 						if ($this->email->send()) {
 							$data['notif'] = 'Validasi sukses';
@@ -76,7 +82,6 @@ class home extends CI_Controller {
 				$data['notif'] = validation_errors();
 				$this->load->view('template_view',$data);
 			}
-
 
 		}
 		

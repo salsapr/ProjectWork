@@ -63,9 +63,6 @@ class Admin_model extends CI_Model {
 						->result();
 	}
 
-
-
-
 	function get_data_pesanan_by_tgl($tanggal)
 	{
 		return $this->db->where('customer.TANGGAL',$tanggal)

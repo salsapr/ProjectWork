@@ -412,7 +412,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/mala.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/malbud.jpg" alt="">
               <h5>Nurkumala Budi Fajrin</h5>
               <br>
          <!--      <p class="text-muted">Lorem Ipsum</p> -->
@@ -427,7 +427,7 @@
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/ridha.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/ridok.jpg" alt="">
               <h5>Ridha Nadhira Febyani</h5>
               <br>
               <!-- <p class="text-muted">Lorem Ipsum</p> -->
@@ -442,7 +442,7 @@
           </div>
           <div class="col-sm-4">
             <div class="tim-member">
-              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/salsa.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/sals.jpg" alt="">
               <h5>Salsabila Putri Rayieningtyas</h5>
               <br>
               <!-- <p class="text-muted">Lorem Ipsum</p> -->
