@@ -66,7 +66,8 @@
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="kd_booking" name="kd_booking" type="text" placeholder="Nomor Pemesanan" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
+                    <span style="color: white;">Kode Booking :</span>
+                    <input class="form-control" id="kd_booking" name="kd_booking" type="text" placeholder="Kode Booking" required data-validation-required-message="Silahkan isi Kode Booking Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
