@@ -71,10 +71,12 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span style="color: white;">Nama Pengirim :</span>
                     <input class="form-control" id="nama_konfir" name="nama_konfir" type="text" placeholder="Nama Pengirim" required data-validation-required-message="Silahkan isi nomor pemesanan Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
+                    <span style="color: white;">Nomor Rekening :</span>
                     <input class="form-control" id="no_rekening" name="no_rekening" type="text" placeholder="Nomor Rekening" required data-validation-required-message="Silahkan isi nomor rekening Anda.">
                     <p class="help-block text-danger"></p>
                   </div>
