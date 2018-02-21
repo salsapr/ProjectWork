@@ -35,7 +35,7 @@ class home extends CI_Controller {
 							'smtp_port'   => 465,
 							//'auth'		  => TRUE,
 							'smtp_user'   => 'malabudif@gmail.com',
-							'smtp_pass'   => 'kademangan12',
+							'smtp_pass'   => 'sawojajar12',
 							'mailtype'    => 'html',
 							'wordwrap'    => TRUE,
 
