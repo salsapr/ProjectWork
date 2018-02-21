@@ -70,8 +70,6 @@ class home extends CI_Controller {
 							$this->session->set_userdata( $array );
 							redirect('home/pesanpesan');
 						} else {
-							print_r('lalaland');
-							die();
 							$data['notif'] = 'Validasi gagal';
 							$this->load->view('template_view',$data);
 						}

@@ -67,10 +67,8 @@
 									<!-- 	<input type="select" id="status" name="status" autofocus placeholder="Status" class="form-control"  value="<?php  echo $detil->STATUS ?>" /> -->
 										<select name="status" id="status" class="form-control" <?php  echo $detil->STATUS ?>>
 										  <option value="">--Pilih Status--</option>
-										  <option value="DP">DP</option>
+										  <option value="DP">Belum Lunas</option>
 										  <option value="Lunas">Lunas</option>
-										  <option value="Selesai">Selesai</option>
-										  <option value="Batal">Batal</option>
 										</select>
 									</div>
 								</div>
